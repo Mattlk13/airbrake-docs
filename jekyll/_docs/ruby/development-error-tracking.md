@@ -35,15 +35,3 @@ Airbrake.configure do |c|
   # Simply don't set this option
 end
 {% endhighlight %}
-
-### Track errors from development (DEPRECATED) Airbrake V4
-
-Airbrake V4 is deprecated and we highly recommend [migrating to Airbrake
-V5](https://github.com/airbrake/airbrake/blob/master/docs/Migration_guide_from_v4_to_v5.md)
-to get the most out of the Airbrake service and features.
-
-{% highlight ruby %}
-Airbrake.configure do |c|
-  c.development_environments = []
-end
-{% endhighlight %}
