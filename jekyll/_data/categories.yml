@@ -25,7 +25,3 @@
 - name: "Billing"
   slug: billing
   index: billing
-
-- name: "Troubleshooting"
-  slug: troubleshooting-2
-  index: troubleshooting-2
