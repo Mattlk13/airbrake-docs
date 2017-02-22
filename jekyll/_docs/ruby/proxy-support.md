@@ -27,5 +27,3 @@ Airbrake.configure do |c|
   }
 end
 {% endhighlight %}
-
-We have more config options in https://github.com/airbrake/airbrake/wiki
