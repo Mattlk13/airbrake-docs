@@ -28,20 +28,4 @@ Airbrake.configure do |c|
 end
 {% endhighlight %}
 
-### Configuring the DEPRECATED Airbrake V4 to use a proxy
-
-The Airbrake V4 notifier is deprecated and we highly recommend [migrating to
-Airbrake
-V5](https://github.com/airbrake/airbrake/blob/master/docs/Migration_guide_from_v4_to_v5.md)
-to get the most out of the Airbrake service and features.
-
-{% highlight ruby%}
-Airbrake.configure do |config|
-  config.proxy_host = 'example.com'
-  config.proxy_port = 8080
-  config.proxy_user = 'proxy-mus prime'
-  config.proxy_pass = 'tr4nsF0rm3rs'
-end
-{% endhighlight %}
-
 We have more config options in https://github.com/airbrake/airbrake/wiki
