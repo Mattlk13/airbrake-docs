@@ -23,7 +23,7 @@ below all other `app.use()` and routes calls.
 
 ### Configuring in an example Express app
 Here is the configuration for an
-[example Express app](https://github.com/airbrake/airbrake-js/tree/master/examples/express),
+[example Express app](https://github.com/airbrake/airbrake-js/tree/master/packages/node/examples/express),
 this app throws and reports an error to Airbrake when you visit
  [localhost:3000](http://localhost:3000). You will want to replace the
 placeholder `projectId` and `projectKey` with the real values from your
