@@ -18,7 +18,7 @@ description: Installing Airbrake in a Browserify application
 To report errors from your Browserify app you configure an `AirbrakeClient` with
 your `projectId` and `projectKey` and report errors with the `notify` function.
 Here is an example from our
-[Browserify example app](https://github.com/airbrake/airbrake-js/tree/master/examples/browserify):
+[Browserify example app](https://github.com/airbrake/airbrake-js/tree/master/packages/browser/examples/browserify):
 
 ```js
 {% include_relative airbrake-js/browserify/app.js %}

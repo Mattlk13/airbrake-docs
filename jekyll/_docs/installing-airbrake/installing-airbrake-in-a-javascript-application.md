@@ -14,17 +14,13 @@ description: Installing Airbrake in a Javascript application
 ## Supported frameworks
   - [AngularJS](/docs/installing-airbrake/installing-airbrake-in-an-angularjs-app/)
   - [Angular 2 and above](/docs/installing-airbrake/installing-airbrake-in-an-angular-2-app/)
-  - [Backbone.js](https://github.com/airbrake/airbrake-js/wiki/Using-Airbrake-with-Backbone.js)
-  - [Bower](/docs/installing-airbrake/installing-airbrake-in-a-bower-app/)
   - [Browserify](/docs/installing-airbrake/installing-airbrake-in-a-browserify-app/)
   - [Express](/docs/installing-airbrake/installing-airbrake-in-an-express-app/)
-  - [hapi.js](/docs/installing-airbrake/installing-airbrake-in-a-hapijs-app/)
   - [Legacy](https://github.com/airbrake/airbrake-js/tree/master/examples/legacy)
   - [Node.js](/docs/installing-airbrake/installing-airbrake-in-a-node-app/)
   - [Rails](/docs/installing-airbrake/installing-airbrake-js-in-a-rails-app/)
   - [React](/docs/installing-airbrake/installing-airbrake-in-a-react-app/)
   - [Redux](/docs/installing-airbrake/installing-airbrake-in-a-redux-app/)
-  - [RequireJS](/docs/installing-airbrake/installing-airbrake-in-a-requirejs-app/)
   - [Vue.js](/docs/installing-airbrake/installing-airbrake-in-a-vuejs-app/)
 
 {% include_relative airbrake-js/installation.md %}
