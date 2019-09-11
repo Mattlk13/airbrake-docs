@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
-title: Getting started with Performance Monitoring
-short-title: Getting started
+title: Performance Monitoring for Rails apps
+short-title: Performance Monitoring for Rails
 categories: [performance-monitoring]
-description: Getting started with Performance Monitoring
+description: Performance Monitoring for Rails apps
 ---
 
 Application Performance Monitoring with Airbrake makes it easy to:
@@ -12,16 +12,6 @@ Application Performance Monitoring with Airbrake makes it easy to:
 - Identify routes with problematic performance
 - Zoom into specific endpoints to see time spent in the DB, view, cache,
   external requests, and more
-
-## Supported languages
-
-Performance Monitoring is available for
-[Rails projects](#rails-installation),
-and is in beta for
-[Go](#golang-support),
-[Django](#django-and-flask-support), and
-[Flask apps](#django-and-flask-support). Is there a language you'd like us to support? Let us
-know at [support@airbrake.io](mailto:support@airbrake.io).
 
 ## Rails installation
 
@@ -55,28 +45,22 @@ If you are upgrading from a previous version of our gem, please follow [our
 upgrade guide](/docs/ruby/upgrading-your-notifier/) to get started with
 Performance Monitoring.
 
-## Golang support
+## Performance Monitoring for other languages
 
-Go support for Performance Monitoring is currently in beta and currently
-features:
-- Sending route stats
-- HTTP middlewares for Gin and Beego users
-- Wrapping important code blocks for detailed timing
-- Collecting stats about individual SQL queries
+Performance Monitoring is in an early access stage for [Go](/docs/performance-monitoring/go/),
+[Django](#django-and-flask-support), and [Flask apps](#django-and-flask-support). Is there a language you'd like us to support? Let us
+know at [support@airbrake.io](mailto:support@airbrake.io).
 
-Check out [our official GitHub
-repo](https://github.com/airbrake/gobrake#sending-routes-stats) to get started.
+### Django and Flask support
 
-## Django and Flask support
-
-Performance Monitoring for Django and Flask apps is currently in beta and is
+Performance Monitoring for Django and Flask apps is currently in early access and is
 supported out of the box - no extra setup required. All you have to do is
 install the latest version of the library. Check out our official GitHub repo
 for more info:
 - [View Django setup guide](https://github.com/airbrake/pybrake#django-integration)
 - [View Flask documentation](https://github.com/airbrake/pybrake#flask-integration)
 
-## Performance Dashboard
+## Performance Dashboard Features
 
 View all of your app’s performance stats at a glance. Trend cards highlight key
 performance metrics across your whole app. The charts show requests, response
