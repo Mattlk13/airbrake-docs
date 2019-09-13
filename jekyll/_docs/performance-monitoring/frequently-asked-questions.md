@@ -24,7 +24,7 @@ get you the rest of the way.
 We currently support Performance Monitoring tracking for our
 [Rails](/docs/performance-monitoring/getting-started/) and have beta
 Performance Monitoring support for
-[Go](https://github.com/airbrake/gobrake#sending-routes-stats),
+[Go](/docs/performance-monitoring/go/),
 [Django](https://github.com/airbrake/pybrake#django-integration), and
 [Flask](https://github.com/airbrake/pybrake#flask-integration) projects.
 
