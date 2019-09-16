@@ -10,6 +10,7 @@ description: installing airbrake in a Flask app
 ![python flag](/docs/assets/img/docs/python_flag.jpeg)
 
 ## Features
+* Early access support for [Airbrake Performance Monitoring](/docs/performance-monitoring/flask/)
 * Simple to install and configure
 * Add extra context to errors before they are sent
 * Set error severity and control notification thresholds
