@@ -48,7 +48,7 @@ Performance Monitoring.
 ## Performance Monitoring for other languages
 
 Performance Monitoring is in an early access stage for [Go](/docs/performance-monitoring/go/),
-[Django](#django-and-flask-support), and [Flask apps](#django-and-flask-support). Is there a language you'd like us to support? Let us
+[Django](#django-and-flask-support), and [Flask apps](/docs/performance-monitoring/flask/). Is there a language you'd like us to support? Let us
 know at [support@airbrake.io](mailto:support@airbrake.io).
 
 ### Django and Flask support
@@ -58,7 +58,7 @@ supported out of the box - no extra setup required. All you have to do is
 install the latest version of the library. Check out our official GitHub repo
 for more info:
 - [View Django setup guide](https://github.com/airbrake/pybrake#django-integration)
-- [View Flask documentation](https://github.com/airbrake/pybrake#flask-integration)
+- [View Flask documentation](/docs/performance-monitoring/flask/)
 
 ## Performance Dashboard Features
 
