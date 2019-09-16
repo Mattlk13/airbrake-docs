@@ -21,37 +21,7 @@ The `pybrake` package makes it quick and easy to monitor your Flask app's
 performance. It only takes a few minutes to start collecting real performance
 data so let's jump right in!
 
-## Step 1: Install the latest version of pybrake
-
-{% highlight bash %}
-pip install pybrake
-{% endhighlight %}
-
-## Step 2: Configure the Airbrake Flask middleware
-
-Replace the placeholder `project_id` and `project_key` values from the example
-below with the real values from your project's setting page.
-
-{% highlight python %}
-from flask import Flask
-import pybrake.flask
-
-app = Flask(__name__)
-app.config['PYBRAKE'] = dict(
-    project_id=123123,
-    project_key='FIX-ME',
-)
-app = pybrake.flask.init_app(app)
-
-
-@app.route('/')
-def hello_world():
-    return 'Hello, World'
-{% endhighlight %}
-
-Once you run this example and perform some `curl`s or visit
-[localhost:5000](http://localhost:5000/) in your browser, you will see
-performance requests in your project's performance dashboard.
+{% include flask-install.md %}
 
 ## Congratulations!
 

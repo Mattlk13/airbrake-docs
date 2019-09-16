@@ -15,34 +15,7 @@ description: installing airbrake in a Flask app
 * Set error severity and control notification thresholds
 * Compatible with [Airbrake On-Premise](https://airbrake.io/enterprise)
 
-## Installation
-
-Airbrake for Flask uses our official Python notifier
-[pybrake](https://github.com/airbrake/pybrake). To install pybrake, you can use
-pip:
-
-```
-pip install -U pybrake
-```
-
-## Configuration
-
-The Flask integration leverages Flask signals and therefore requires the blinker library.
-
-```py
-from flask import Flask
-import pybrake.flask
-
-
-
-app = Flask(__name__)
-
-app.config['PYBRAKE'] = dict(
-    project_id=123,
-    project_key='FIXME',
-)
-app = pybrake.flask.init_app(app)
-```
+{% include flask-install.md %}
 
 ## Sending errors to Airbrake
 
