@@ -10,6 +10,7 @@ description: installing airbrake in a Django app
 ![python flag](/docs/assets/img/docs/python_flag.jpeg)
 
 ## Features
+* Early access support for [Airbrake Performance Monitoring](/docs/performance-monitoring/django/)
 * Simple to install and configure
 * Automatically report exceptions from your django app
 * Compatible with [Airbrake on-premise](https://airbrake.io/enterprise)
