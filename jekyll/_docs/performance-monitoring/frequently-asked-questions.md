@@ -25,7 +25,7 @@ We currently support Performance Monitoring tracking for our
 [Rails](/docs/performance-monitoring/getting-started/) and have beta
 Performance Monitoring support for
 [Go](/docs/performance-monitoring/go/),
-[Django](https://github.com/airbrake/pybrake#django-integration), and
+[Django](/docs/performance-monitoring/django/), and
 [Flask](/docs/performance-monitoring/flask/) projects.
 
 ### How much does Performance Monitoring cost per host?
