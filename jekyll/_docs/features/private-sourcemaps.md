@@ -111,7 +111,7 @@ For your private sourcemap upload to function correctly it's important you check
 - Your `app.min.js` file has the `sourceMappingURL` comment at the bottom of
   that file, e.g. `//# sourceMappingURL=app.min.js.map`
 
-We also support public sourcemaps please visit our [official airbrake-js repo](https://github.com/airbrake/airbrake-js#source-map) for more info.
+We also support public sourcemaps please visit our [official airbrake-js repo](https://github.com/airbrake/airbrake-js/tree/master/packages/browser#source-maps) for more info.
 
 #### Sourcemap file size limit
 

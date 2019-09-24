@@ -21,4 +21,4 @@ airbrake.addFilter(function(notice) {
   return notice;
 });
 ```
-[More info on using `addFilter`](https://github.com/airbrake/airbrake-js#filtering-errors)
+[More info on using `addFilter`](https://github.com/airbrake/airbrake-js/tree/master/packages/browser#filtering-errors)

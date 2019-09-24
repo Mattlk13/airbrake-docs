@@ -30,7 +30,7 @@ Airbrake.add_filter do |notice|
 end
 ```
 
-#### [Ignore errors in Javascript](https://github.com/airbrake/airbrake-js#filtering-errors)
+#### [Ignore errors in Javascript](https://github.com/airbrake/airbrake-js/tree/master/packages/browser#filtering-errors)
 
 ```js
 airbrake.addFilter(function(notice) {
