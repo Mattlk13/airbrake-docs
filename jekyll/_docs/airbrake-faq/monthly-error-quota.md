@@ -5,11 +5,6 @@ categories: [airbrake-faq]
 description: Monthly error quota
 ---
 
-> **Note:** If your [current plan](https://airbrake.io/account/error-quota)
-> does not display the number of errors per month, your plan uses a
-> [rate limit](/docs/airbrake-faq/what-is-a-rate-limit/) and this section does
-> not apply to your plan.
-
 Your plan's monthly error quota determines the number of errors that can be sent
 to your Airbrake account within a billing period. Your monthly error
 quota is refilled at the beginning of each new billing period.
