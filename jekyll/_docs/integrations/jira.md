@@ -17,8 +17,6 @@ problems effecting your users, giving you everything you need to solve problems
 fast!
 
 This integration supports **onDemand** and **Standalone** versions of JIRA.
-**Currently Airbrake only supports the classic projects on JIRA. We are looking
-at supporting the next gen projects soon.**
 
 ## Configuring the JIRA integration
 
@@ -79,3 +77,11 @@ If you would like to remove the association between the Error and issue, just
 click the **Remove** button:
 
 ![jira issue link](/docs/assets/img/docs/integrations/jira_issue_link.png)
+
+## Integrating with a next-gen JIRA project
+
+If you're integrating with a next-gen JIRA project, please make sure to disable
+the **'Include separate "environment" field when creating issues'** option because
+next-gen JIRA projects do not have an "environment" field available.
+
+![jira env field](/docs/assets/img/docs/integrations/jira_include_environment_field.png)
