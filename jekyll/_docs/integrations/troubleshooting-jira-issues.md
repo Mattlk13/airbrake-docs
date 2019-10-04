@@ -9,6 +9,9 @@ description: Troubleshooting JIRA issues
 
 >400 Bad Request - Field 'environment' cannot be set. It is not on the appropriate screen, or unknown.
 
+If you're integrating with a **next-gen JIRA project**, please visit
+[this section](/docs/integrations/jira/#integrating-with-a-next-gen-jira-project).
+
 This error arises when the **Environment** field is unavailable as an option
 for JIRA issue creation.
 The fix is to add the **Environment** field on your JIRA issue screen. These
