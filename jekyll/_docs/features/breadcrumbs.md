@@ -36,7 +36,7 @@ of our [JavaScript notifier](https://github.com/airbrake/airbrake-js).
 ## Disabling Breadcrumbs
 Don't want airbrake-js to send Breadcrumb data to Airbrake? No problem, you can
 strip errors of Breadcrumb data using the
-[`addFilter` method](https://github.com/airbrake/airbrake-js#filtering-errors):
+[`addFilter` method](https://github.com/airbrake/airbrake-js/tree/master/packages/browser#filtering-errors):
 
 ```js
 airbrake.addFilter(function(notice) {
