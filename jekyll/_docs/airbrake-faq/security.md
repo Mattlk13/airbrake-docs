@@ -55,4 +55,4 @@ If you are disclosing a vulnerability please do so [responsibly](https://en.wiki
 - the output from the tools used
 - the commands used to execute the tools
 
-Please note Airbrake **DOES NOT** maintain a bug bounty program **nor** does Airbrake pay for unsolicited disclosures.
+Please note Airbrake **DOES NOT** maintain a bug bounty program. Airbrake also **DOES NOT** pay for unsolicited disclosures.
