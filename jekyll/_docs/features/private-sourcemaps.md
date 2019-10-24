@@ -102,6 +102,17 @@ airbrake.addFilter(function(notice) {
 });
 ```
 
+#### Viewing your uploaded sourcemaps
+
+You can view a list of the sourcemaps that you've uploaded to Airbrake using
+this endpoint:
+
+```
+https://airbrake.io/api/v4/projects/PROJECT_ID/sourcemaps?key=USER_AUTH_TOKEN
+```
+
+You can get your `user auth token` in [your personal settings page](https://airbrake.io/users/edit).
+
 ### Troubleshooting
 
 For your private sourcemap upload to function correctly it's important you check that:
