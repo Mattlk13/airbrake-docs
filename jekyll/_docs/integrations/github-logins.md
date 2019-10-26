@@ -33,3 +33,11 @@ to secure their Airbrake accounts.
 
 You can find this option in your
 [account security settings](https://airbrake.io/account/security)
+
+## Troubleshooting
+**Error: "You don't have access to this Airbrake account because you're not a member of `'YOUR_GITHUB_ORG_NAME'`
+GitHub organization".**
+
+Revoke Airbrake access on GitHub [(https://github.com/settings/applications)](https://github.com/settings/applications)
+and try to log in again. You will be asked to approve authorization again and then
+you should grant access for `'YOUR_GITHUB_ORG_NAME'` GitHub organization.
