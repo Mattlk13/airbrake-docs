@@ -12,7 +12,7 @@ follow our [guide to upgrade from a deprecated version](/docs/ruby/upgrading-fro
 just edit your `Gemfile`:
 
 ```rb
-gem 'airbrake', '~> 9.4'
+gem 'airbrake', '~> 9.5'
 ```
 
 **Step: 2:** Run the update command to update the `airbrake` gem and `airbrake-ruby` gem
