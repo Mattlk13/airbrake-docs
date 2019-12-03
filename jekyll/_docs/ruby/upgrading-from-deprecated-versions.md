@@ -14,13 +14,8 @@ version using the guide below.
 
 Upgrade to the latest version of our gem by updating your Gemfile:
 
-_**Note:** our gem is
-updated frequently, you can always find the current version on
-[RubyGems](https://rubygems.org/gems/airbrake) or on [our
-GitHub](https://github.com/airbrake/airbrake/releases)._
-
 ```rb
-gem 'airbrake', '~> 9.5'
+gem 'airbrake'
 ```
 
 Then run the update command to update our main gem and the `airbrake-ruby` gem

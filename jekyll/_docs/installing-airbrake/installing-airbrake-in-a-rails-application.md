@@ -26,12 +26,8 @@ responsibilities.
 Open up your `Gemfile` in your favorite text editor and add the `airbrake` gem.
 
 {% highlight ruby %}
-gem 'airbrake', '~> 5.4'
+gem 'airbrake'
 {% endhighlight %}
-
-> **NOTE:** This version could be out of date, [the
-README](https://github.com/airbrake/airbrake#bundler) will always have the
-correct version.
 
 To install the Airbrake gem, run from the root directory of your application.
 
