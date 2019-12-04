@@ -116,7 +116,10 @@ this endpoint:
 https://airbrake.io/api/v4/projects/PROJECT_ID/sourcemaps?key=USER_AUTH_TOKEN
 ```
 
-You can get your `user auth token` in [your personal settings page](https://airbrake.io/users/edit).
+You can get your `user auth token` in
+[your personal settings page](https://airbrake.io/users/edit). Results are
+returned according to
+[our API's pagination structure](https://airbrake.io/docs/api/#pagination).
 
 ### Troubleshooting
 
