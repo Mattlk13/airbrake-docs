@@ -6,8 +6,9 @@ description: A glimpse of what happened on your account over a period of time em
 ---
 
 Digest emails provide a summary of what happened on your account, including new
-errors, occurrences & deploys across all projects you are subscribed to. The
-summary contains trends to help you understand how your projects are performing.
+errors, occurrences, deploys, and performance stats across all projects you are
+subscribed to. The summary contains trends to help you understand how your
+projects are performing.
 
 For example, the following digest shows a 250% increase of errors during one day
 in 88 projects an account has (7 errors yesterday vs 2 errors 2 days ago):
