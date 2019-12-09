@@ -32,4 +32,4 @@ Or, if you're using yarn:
 yarn upgrade @airbrake/node
 ```
 
-That's it!
+{% include_relative express-install-note.md %}

@@ -63,3 +63,5 @@ var airbrake = new Airbrake.Notifier({
 
 Find advanced configuration options and examples on our [official GitHub
 repo](https://github.com/airbrake/airbrake-js/tree/master/packages/node).
+
+{% include_relative express-install-note.md %}
