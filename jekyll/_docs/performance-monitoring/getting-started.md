@@ -1,17 +1,19 @@
 ---
 layout: classic-docs
-title: Performance Monitoring for Rails apps
-short-title: Performance Monitoring for Rails
+title: Performance Monitoring Getting Started
+short-title: Performance Monitoring Getting Started
 categories: [performance-monitoring]
-description: Performance Monitoring for Rails apps
+description: Getting Started with Performance Monitoring
 ---
 
-Application Performance Monitoring with Airbrake makes it easy to:
-- See a broad performance overview for your whole application
-- Measure user satisfaction with your app performance using Apdex
-- Identify routes with problematic performance
-- Zoom into specific endpoints to see time spent in the DB, view, cache,
-  external requests, and more
+{% include_relative performance-monitoring-features.md %}
+
+## Supported languages
+- Rails (instructions below)
+- [Node.js (Express.js) setup guide](/docs/performance-monitoring/updating-your-node-notifier/)
+- [Go setup guide](/docs/performance-monitoring/go/)
+- [Django setup guide](/docs/performance-monitoring/django/)
+- [Flask documentation](/docs/performance-monitoring/flask/)
 
 ## Rails installation
 
@@ -44,21 +46,6 @@ what happened at [support@airbrake.io](mailto:support@airbrake.io).
 If you are upgrading from a previous version of our gem, please follow [our
 upgrade guide](/docs/ruby/upgrading-your-notifier/) to get started with
 Performance Monitoring.
-
-## Performance Monitoring for other languages
-
-Performance Monitoring is in an early access stage for [Go](/docs/performance-monitoring/go/),
-[Django](/docs/performance-monitoring/django/), and [Flask apps](/docs/performance-monitoring/flask/). Is there a language you'd like us to support? Let us
-know at [support@airbrake.io](mailto:support@airbrake.io).
-
-### Django and Flask support
-
-Performance Monitoring for Django and Flask apps is currently in early access and is
-supported out of the box - no extra setup required. All you have to do is
-install the latest version of the library. Check out our official GitHub repo
-for more info:
-- [View Django setup guide](/docs/performance-monitoring/django/)
-- [View Flask documentation](/docs/performance-monitoring/flask/)
 
 ## Performance Dashboard Features
 
