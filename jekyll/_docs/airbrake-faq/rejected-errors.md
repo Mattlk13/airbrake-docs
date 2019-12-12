@@ -22,8 +22,8 @@ The error notice is rejected if it is sent with incorrect JSON/XML as determined
 by:
 
 - **JSON:** [POST data schema](https://airbrake.io/docs/api/#post-data-schema-v3) and
-[POST data fields](https:/airbrake.io/docs/api/#post-data-fields-v3)
-- **XML**: as described in our [XML API doc](/docs/api-2/notifier-api-v23)
+[POST data fields](https://airbrake.io/docs/api/#post-data-fields-v3)
+- **XML**: as described in our [XML API doc](/docs/legacy-xml-api/)
 
 ## Graphed rejections
 You can view rejected error trends in your project overview graph.
