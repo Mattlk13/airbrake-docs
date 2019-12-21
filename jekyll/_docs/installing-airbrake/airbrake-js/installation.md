@@ -3,11 +3,11 @@
 ### Using npm
 
 ```
-npm install airbrake-js
+npm install @airbrake/browser
 ```
 
-### Using Bower
+### Using Yarn
 
 ```
-bower install airbrake-js-client
+yarn add @airbrake/browser
 ```

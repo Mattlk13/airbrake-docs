@@ -1,5 +1,0 @@
-#!/bin/bash
-# Fetch the app.js file from the example RequireJS app
-
-curl 'https://raw.githubusercontent.com/airbrake/airbrake-js/master/examples/requirejs/app.js' \
-  -o app.js

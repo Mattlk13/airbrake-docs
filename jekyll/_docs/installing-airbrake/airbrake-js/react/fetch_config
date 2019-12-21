@@ -1,5 +1,5 @@
 #!/bin/bash
 # Fetch the README.md file from the example React app
 
-curl 'https://raw.githubusercontent.com/airbrake/airbrake-js/master/examples/react/README.md' \
+curl 'https://raw.githubusercontent.com/airbrake/airbrake-js/master/packages/browser/examples/react/README.md' \
   -o config.md

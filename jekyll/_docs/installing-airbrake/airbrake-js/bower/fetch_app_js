@@ -1,5 +1,0 @@
-#!/bin/bash
-# Fetch the app.js file from the example Bower app
-
-curl 'https://raw.githubusercontent.com/airbrake/airbrake-js/master/examples/bower-wiredep/app.js' \
-  -o app.js
