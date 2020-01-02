@@ -11,13 +11,13 @@ description: Installing Airbrake in an Express application
 
 {% include_relative airbrake-js/features.md %}
 
-{% include_relative airbrake-js/installation.md %}
+{% include_relative airbrake-js/node-installation.md %}
 
 ## Configuration
 
 After you have installed the [airbrake-js notifier](https://github.com/airbrake/airbrake-js)
 the next step is configuring Airbrake in your Express app.  Configuration
-involves creating an `AirbrakeClient` with your `projectId` and `projectKey` and
+involves creating an `Notifier` with your `projectId` and `projectKey` and
 registering an Express error handler. The error handler should be registered
 below all other `app.use()` and routes calls.
 
@@ -25,34 +25,58 @@ below all other `app.use()` and routes calls.
 Here is the configuration for an
 [example Express app](https://github.com/airbrake/airbrake-js/tree/master/packages/node/examples/express),
 this app throws and reports an error to Airbrake when you visit
- [localhost:3000](http://localhost:3000). You will want to replace the
-placeholder `projectId` and `projectKey` with the real values from your
-project's settings page.
+ [localhost:3000](http://localhost:3000). You will want to set your
+ `AIRBRAKE_PROJECT_ID` and `AIRBRAKE_PROJECT_KEY` with your project's actual ID
+ and key (found in your project settings page).
 
 ```js
-var express = require('express');
-var AirbrakeClient = require('airbrake-js');
-var makeErrorHandler = require('airbrake-js/dist/instrumentation/express');
+const express = require('express');
+const pg = require('pg');
 
-var app = express();
+const Airbrake = require('@airbrake/node');
+const airbrakeExpress = require('@airbrake/node/dist/instrumentation/express');
+const airbrakePG = require('@airbrake/node/dist/instrumentation/pg');
 
-app.get('/', function hello (req, res) {
-  throw new Error('hello from Express');
-  res.send('Hello World!');
-})
+async function main() {
+  const airbrake = new Airbrake.Notifier({
+    projectId: process.env.AIRBRAKE_PROJECT_ID,
+    projectKey: process.env.AIRBRAKE_PROJECT_KEY,
+  });
 
-var airbrake = new AirbrakeClient({
-  projectId: 1,
-  projectKey: 'FIXME',
-});
+  console.log(pg.Client.prototype.query);
 
-// Error handler middleware should be the last, after other app.use() and routes calls.
-// http://expressjs.com/en/guide/error-handling.html
-app.use(makeErrorHandler(airbrake));
+  const client = new pg.Client();
+  await client.connect();
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-})
+  const app = express();
+
+  // This middleware should be added before any routes are defined.
+  app.use(airbrakeExpress.makeMiddleware(airbrake));
+
+  app.get('/', async function home(req, res) {
+    const result = await client.query('SELECT $1::text as message', [
+      'Hello world!',
+    ]);
+    console.log(result.rows[0].message);
+
+    res.send('Hello World!');
+  });
+
+  app.get('/hello/:name', function hello(req, res) {
+    throw new Error('hello from Express');
+    res.send(`Hello ${req.params.name}`);
+  });
+
+  // Error handler middleware should be the last one.
+  // See http://expressjs.com/en/guide/error-handling.html
+  app.use(airbrakeExpress.makeErrorHandler(airbrake));
+
+  app.listen(3000, function() {
+    console.log('Example app listening on port 3000!');
+  });
+}
+
+main();
 ```
 
 {% include_relative airbrake-js/going-further.md %}
