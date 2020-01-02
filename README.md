@@ -69,7 +69,6 @@ install instructions from the example app:
 ```
 # lines like these indicate there is a helper script to update the content
 {% include_relative airbrake-js/react/config.md %}
-{% include_relative airbrake-js/hapijs/server.js %}
 ```
 
 ## Jekyll Commands
