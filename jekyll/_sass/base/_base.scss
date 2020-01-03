@@ -10,6 +10,9 @@ a,
 a:hover,
 a:active {
   color: $ab-blue-400;
+  code {
+    color: $ab-blue-400;
+  }
 }
 
 a:hover {
