@@ -11,6 +11,9 @@ or [OneLogin](https://www.onelogin.com). This feature is currently in beta.
 Please contact [support@airbrake.io](mailto:support@airbrake.io) if you want to
 be a beta tester.
 
+_**Note:** Single sign-on is a premium feature available to all accounts on our
+Business plan ($599/month) and larger._
+
 Below you can find the configuration documentation for Okta and OneLogin.
 
 ## Okta
