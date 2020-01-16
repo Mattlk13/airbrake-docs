@@ -11,72 +11,72 @@ description: Installing Airbrake in an Express application
 
 {% include_relative airbrake-js/features.md %}
 
-{% include_relative airbrake-js/node-installation.md %}
+# Using Airbrake with Express.js
 
-## Configuration
+This example Node.js application uses Express.js and sets up Airbrake to report
+errors and performance data. To adapt this example to your app, follow these
+steps:
 
-After you have installed the [airbrake-js notifier](https://github.com/airbrake/airbrake-js)
-the next step is configuring Airbrake in your Express app.  Configuration
-involves creating an `Notifier` with your `projectId` and `projectKey` and
-registering an Express error handler. The error handler should be registered
-below all other `app.use()` and routes calls.
+#### 1. Install the package
+```shell
+npm install @airbrake/node
+```
 
-### Configuring in an example Express app
-Here is the configuration for an
-[example Express app](https://github.com/airbrake/airbrake-js/tree/master/packages/node/examples/express),
-this app throws and reports an error to Airbrake when you visit
- [localhost:3000](http://localhost:3000). You will want to set your
- `AIRBRAKE_PROJECT_ID` and `AIRBRAKE_PROJECT_KEY` with your project's actual ID
- and key (found in your project settings page).
+We also support installation via
+[yarn](https://github.com/airbrake/airbrake-js/tree/master/packages/node#installation).
+
+
+#### 2. Include airbrake-js in your app
+Include the required airbrake-js libraries in your `app.js`
 
 ```js
-const express = require('express');
-const pg = require('pg');
-
 const Airbrake = require('@airbrake/node');
 const airbrakeExpress = require('@airbrake/node/dist/instrumentation/express');
 const airbrakePG = require('@airbrake/node/dist/instrumentation/pg');
-
-async function main() {
-  const airbrake = new Airbrake.Notifier({
-    projectId: process.env.AIRBRAKE_PROJECT_ID,
-    projectKey: process.env.AIRBRAKE_PROJECT_KEY,
-  });
-
-  console.log(pg.Client.prototype.query);
-
-  const client = new pg.Client();
-  await client.connect();
-
-  const app = express();
-
-  // This middleware should be added before any routes are defined.
-  app.use(airbrakeExpress.makeMiddleware(airbrake));
-
-  app.get('/', async function home(req, res) {
-    const result = await client.query('SELECT $1::text as message', [
-      'Hello world!',
-    ]);
-    console.log(result.rows[0].message);
-
-    res.send('Hello World!');
-  });
-
-  app.get('/hello/:name', function hello(req, res) {
-    throw new Error('hello from Express');
-    res.send(`Hello ${req.params.name}`);
-  });
-
-  // Error handler middleware should be the last one.
-  // See http://expressjs.com/en/guide/error-handling.html
-  app.use(airbrakeExpress.makeErrorHandler(airbrake));
-
-  app.listen(3000, function() {
-    console.log('Example app listening on port 3000!');
-  });
-}
-
-main();
 ```
 
-{% include_relative airbrake-js/going-further.md %}
+#### 3. Configure Airbrake with your project's credentials
+
+```js
+const airbrake = new Airbrake.Notifier({
+  projectId: process.env.AIRBRAKE_PROJECT_ID,
+  projectKey: process.env.AIRBRAKE_PROJECT_KEY,
+});
+```
+
+#### 4. Add the Airbrake Express middleware
+This middleware should be added before any routes are defined.
+
+```js
+app.use(airbrakeExpress.makeMiddleware(airbrake));
+```
+
+#### 5. Add the Airbrake Express error handler
+The error handler middleware should be defined last. For more info on how this
+works, see the official
+[Express error handling doc](http://expressjs.com/en/guide/error-handling.html).
+
+```js
+app.use(airbrakeExpress.makeErrorHandler(airbrake));
+```
+
+#### 6. Run your app
+The last step is to run your app. To test that you've configured Airbrake
+correctly, you can throw an error inside any of your routes:
+```js
+app.get('/hello/:name', function hello(req, res) {
+  throw new Error('hello from Express');
+  res.send(`Hello ${req.params.name}`);
+});
+```
+
+
+Any unhandled errors that are thrown will now be reported to Airbrake. See the
+[basic usage](https://github.com/airbrake/airbrake-js/tree/master/packages/node#basic-usage)
+to learn how to manually send errors to Airbrake and other advanced options.
+
+To see this all in action, check out
+[the full `app.js` file](https://github.com/airbrake/airbrake-js/blob/master/packages/node/examples/express/app.js)
+in our
+[example](https://github.com/airbrake/airbrake-js/blob/master/packages/node/examples/express)
+on GitHub.
