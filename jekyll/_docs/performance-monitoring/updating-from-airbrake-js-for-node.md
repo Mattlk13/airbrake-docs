@@ -37,6 +37,9 @@ We also support installation via
 
 ## Step 3: Replace mentions with new library
 
+_**Note:** Express.js users should follow our **[Express.js install
+guide](/docs/installing-airbrake/installing-airbrake-in-an-express-app/)**._
+
 #### Imports: Replace old library import:
 ```js
 var AirbrakeClient = require('airbrake-js');

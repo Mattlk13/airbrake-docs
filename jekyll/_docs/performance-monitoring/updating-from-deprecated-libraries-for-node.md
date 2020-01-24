@@ -40,6 +40,9 @@ We also support installation via
 
 ## Step 3: Replace mentions with new library
 
+_**Note:** Express.js users should follow our **[Express.js install
+guide](/docs/installing-airbrake/installing-airbrake-in-an-express-app/)**._
+
 Replace old configuration snippet instantiation:
 
 ```js
