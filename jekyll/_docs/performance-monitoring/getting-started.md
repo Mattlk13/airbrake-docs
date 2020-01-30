@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Performance Monitoring Getting Started
-short-title: Performance Monitoring Getting Started
+short-title: Getting Started
 categories: [performance-monitoring]
 group: About Performance Monitoring
 group-position: 1

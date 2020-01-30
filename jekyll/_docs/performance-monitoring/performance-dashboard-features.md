@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Performance Dashboard Features
-short-title: Performance Dashboard Features
+short-title: Dashboard Features
 categories: [performance-monitoring]
 group: About Performance Monitoring
 group-position: 2

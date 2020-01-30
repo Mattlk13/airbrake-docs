@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Performance Monitoring for Django apps
-short-title: Performance Monitoring for Django
+short-title: Monitoring Django apps
 categories: [performance-monitoring]
 group: Python Performance Monitoring
 description: Performance Monitoring for Django

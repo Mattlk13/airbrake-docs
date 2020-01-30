@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Performance Monitoring for Go applications
-short-title: Performance Monitoring for Go
+short-title: Monitoring Go apps
 categories: [performance-monitoring]
 group: Go Performance Monitoring
 description: Performance Monitoring for Go applications
