@@ -3,6 +3,7 @@ layout: classic-docs
 title: Updating your Python notifier
 short-title: Updating your Python notifier
 categories: [performance-monitoring]
+group: Python Performance Monitoring
 description: How to update your Python notifier for Performance Monitoring
 ---
 

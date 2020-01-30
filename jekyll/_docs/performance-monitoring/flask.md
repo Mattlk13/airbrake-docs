@@ -3,6 +3,7 @@ layout: classic-docs
 title: Performance Monitoring for Flask apps
 short-title: Performance Monitoring for Flask
 categories: [performance-monitoring]
+group: Python Performance Monitoring
 description: Performance Monitoring for Flask
 ---
 

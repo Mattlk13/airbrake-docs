@@ -3,6 +3,7 @@ layout: classic-docs
 title: Updating your Go notifier
 short-title: Updating your Go notifier
 categories: [performance-monitoring]
+group: Go Performance Monitoring
 description: How to update your Go notifier for Performance Monitoring
 ---
 

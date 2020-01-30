@@ -3,6 +3,7 @@ layout: classic-docs
 title: Updating from node-airbrake for Node.js projects
 short-title: Updating from node-airbrake for Node.js projects
 categories: [performance-monitoring]
+group: Node Performance Monitoring
 description: How to update your Node.js project's notifier from node-airbrake
 ---
 
