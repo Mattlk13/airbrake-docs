@@ -1,8 +1,9 @@
 ---
 layout: classic-docs
 title: Updating from airbrake-js for Node.js projects
-short-title: Updating from airbrake-js for Node.js projects
+short-title: Updating from <code>airbrake-js</code> to <code>@airbrake/node</code>
 categories: [performance-monitoring]
+group: Node Performance Monitoring
 description: How to update your Node.js project's notifier from airbrake-js
 ---
 

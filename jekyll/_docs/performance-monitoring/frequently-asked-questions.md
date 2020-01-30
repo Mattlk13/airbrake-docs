@@ -3,6 +3,8 @@ layout: classic-docs
 title: Performance Monitoring FAQ
 short-title: FAQ
 categories: [performance-monitoring]
+group: About Performance Monitoring
+group-position: 3
 description: Performance Monitoring FAQ
 ---
 

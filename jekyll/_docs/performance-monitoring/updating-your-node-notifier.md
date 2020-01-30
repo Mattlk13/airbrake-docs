@@ -3,6 +3,7 @@ layout: classic-docs
 title: Updating your Node.js notifier
 short-title: Updating your Node.js notifier
 categories: [performance-monitoring]
+group: Node Performance Monitoring
 description: How to update your Node.js notifier for Performance Monitoring
 ---
 
