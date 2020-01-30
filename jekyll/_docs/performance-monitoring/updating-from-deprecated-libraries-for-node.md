@@ -4,6 +4,7 @@ title: Updating from node-airbrake for Node.js projects
 short-title: Updating from <code>node-airbrake</code> to <code>@airbrake/node</code>
 categories: [performance-monitoring]
 group: Node Performance Monitoring
+group-position: 2
 description: How to update your Node.js project's notifier from node-airbrake
 ---
 
