@@ -1,7 +1,10 @@
 ---
 layout: classic-docs
 title: Upgrading your notifier
-categories: [ruby]
+short-title: Updating your Rails notifier
+categories: [ruby, performance-monitoring]
+group: Rails Performance Monitoring
+group-position: 2
 description: Upgrading your notifier
 ---
 > **Note:** If you are upgrading from version `4.X.X` or older, please
