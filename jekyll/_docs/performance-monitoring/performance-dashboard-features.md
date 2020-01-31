@@ -26,6 +26,4 @@ errors.
 
 ![Route View](/docs/assets/img/docs/performance_monitoring/route-view.png)
 
-Have questions about Performance Monitoring? Check out our [Performance
-Monitoring FAQ](/docs/performance-monitoring/frequently-asked-questions/) for
-more information.
+{% include_relative partials/faq.md %}

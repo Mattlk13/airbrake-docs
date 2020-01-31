@@ -7,7 +7,7 @@ group: Python Performance Monitoring
 description: Performance Monitoring for Django
 ---
 
-{% include_relative performance-monitoring-features.md %}
+{% include_relative partials/features-list.md %}
 
 ## Django Support
 
@@ -19,14 +19,7 @@ data so let's jump right in!
 
 {% include django-install.md %}
 
-## Congratulations!
-
-Great job! Just visit your Airbrake project's Performance Dashboard to see route
-data for your app. Soon enough you'll have more insights into your application's
-performance. In the meantime why not check out the [Performance Dashboard
-features](/docs/performance-monitoring/performance-dashboard-features/). If you
-have questions about Performance Monitoring, visit the [Performance Monitoring
-FAQ](/docs/performance-monitoring/frequently-asked-questions/).
+{% include_relative partials/congratulations.md %}
 
 ### Want to learn more?
 

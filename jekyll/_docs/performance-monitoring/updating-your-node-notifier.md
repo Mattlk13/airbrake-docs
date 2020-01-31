@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
 title: Updating your Node.js notifier
-short-title: Updating your Node.js notifier
+short-title: Monitoring Express apps
 categories: [performance-monitoring]
 group: Node Performance Monitoring
+group-position: 1
 description: How to update your Node.js notifier for Performance Monitoring
 ---
 

@@ -7,7 +7,7 @@ group: Go Performance Monitoring
 description: Performance Monitoring for Go applications
 ---
 
-{% include_relative performance-monitoring-features.md %}
+{% include_relative partials/features-list.md %}
 
 ## Go Support
 
@@ -102,15 +102,7 @@ Once you run this example and perform some `curl`s or visit
 [localhost:5555/](http://localhost:5555/) in your browser, you will see
 performance requests in your project's performance dashboard.
 
-## Congratulations!
-
-Great job! If you've used this example in your app, you can visit your
-Airbrake project's Performance Dashboard to see your performance data! Soon
-enough you'll have more insights into your application's performance. In the
-meantime why not check out the [Performance Dashboard
-features](/docs/performance-monitoring/performance-dashboard-features/).
-If you have questions about Performance Monitoring, visit the [Performance
-Monitoring FAQ](/docs/performance-monitoring/frequently-asked-questions/).
+{% include_relative partials/congratulations.md %}
 
 ### Measuring timing of specific operations
 

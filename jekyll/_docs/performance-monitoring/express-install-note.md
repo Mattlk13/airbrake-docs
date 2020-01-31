@@ -1,5 +1,7 @@
 ## Performance Monitoring Beta for Express.js apps
 
+{% include_relative partials/features-list.md %}
+
 [Airbrake Performance Monitoring](/docs/performance-monitoring/performance-dashboard-features/)
 is in **beta** for Express.js projects. To get started, install  our Express.js
 middleware as shown in
@@ -16,5 +18,4 @@ before any routes are defined):
 app.use(airbrakeExpress.makeMiddleware(airbrake));
 ```
 
-Once you deploy your app, you should start seeing performance data
-automatically populate in your project's Performance Dashboard.
+{% include_relative partials/congratulations.md %}
