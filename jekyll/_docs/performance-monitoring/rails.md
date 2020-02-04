@@ -27,6 +27,17 @@ and replace `PROJECT_ID` and `PROJECT_KEY` with your project's values:
 rails g airbrake PROJECT_ID PROJECT_KEY
 ```
 
+### Step 2: Update your config file
+
+Check your `config/initializers/airbrake.rb` file to make sure the
+`performance_stats` options is set to `true`.
+
+```rb
+Airbrake.configure do |c|
+  c.performance_stats = true
+end
+```
+
 {% include_relative partials/congratulations.md %}
 
 ### Upgrading from a previous gem version?
