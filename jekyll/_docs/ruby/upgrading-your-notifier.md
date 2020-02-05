@@ -27,12 +27,6 @@ bundle update airbrake airbrake-ruby
 
 That's it! Your upgrade is complete.
 
-> **Note:** by default, current versions of our gem **monitor performance** along
-with errors. If you want to disable performance monitoring, set the
-[`performance_stats`
-option](https://github.com/airbrake/airbrake-ruby#performance_stats) to
-`false`.
-
 #### Problems upgrading?
 If you run into any issues upgrading, we are happy to help. Just let us
 know what happened at [support@airbrake.io](mailto:support@airbrake.io).

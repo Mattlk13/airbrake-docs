@@ -61,9 +61,3 @@ Overwrite /Users/arthur/my-app/config/initializers/airbrake.rb? (enter "h" for h
 
 For a full migration guide, check out
 [our doc on GitHub](https://github.com/airbrake/airbrake/blob/master/docs/Migration_guide_from_v4_to_v5.md).
-
-_**Note:** by default, current versions of our gem monitor performance along
-with errors. If you want to disable performance monitoring, set [the
-`performance_stats`
-option](https://github.com/airbrake/airbrake-ruby#performance_stats) to
-`false`._
