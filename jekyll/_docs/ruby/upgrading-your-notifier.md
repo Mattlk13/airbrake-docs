@@ -30,3 +30,9 @@ That's it! Your upgrade is complete.
 #### Problems upgrading?
 If you run into any issues upgrading, we are happy to help. Just let us
 know what happened at [support@airbrake.io](mailto:support@airbrake.io).
+
+#### Going further
+Check out our
+[main gem's GitHub](https://github.com/airbrake/airbrake)
+for more info or our base, Ruby gem for
+[advanced configuration options](https://github.com/airbrake/airbrake-ruby).
