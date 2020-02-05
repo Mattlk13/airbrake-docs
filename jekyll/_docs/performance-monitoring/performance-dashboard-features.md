@@ -26,4 +26,24 @@ errors.
 
 ![Route View](/docs/assets/img/docs/performance_monitoring/route-view.png)
 
-{% include_relative partials/faq.md %}
+### Background job monitoring
+
+Automatically track background job performance for all your apps. Measure and
+improve the quality of your background jobs and easily gain insight into job
+failure rates and duration issues. You can find your app's job performance from
+the jobs tab of the performance dashboard.
+
+![Jobs View](/docs/assets/img/docs/performance_monitoring/background-jobs.png)
+
+#### Supported Background Job libraries
+- **Ruby** supports automatic job tracking for
+   - Sidekiq, Resque, Sneakers, DelayedJob, ActiveJob, and Shoryuken
+- **Python** supports automatic job tracking for Celery [with minimal setup](https://github.com/airbrake/pybrake/blob/master/examples/celery/tasks.py#L8-L9).
+- **Go** supports [Manual background job tracking](https://github.com/airbrake/gobrake#sending-queue-stats)
+- Don't see your library? Let us know [support@airbrake.io](mailto:support.io)!
+
+### Questions?
+
+{% include_relative partials/faq.md %} You can also reach us at
+[support@airbrake.io](mailto:support@airbrake.io). Our team is happy to answer
+questions and we are always accepting feedback.
