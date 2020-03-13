@@ -138,8 +138,3 @@ frameworks:
 ## More information available on GitHub
 Please visit the [Airbrake gem repo](https://github.com/airbrake/airbrake)
 for more configuration options, use cases, examples, and tips.
-
-## Looking for the Heroku guide?
-If so, you may prefer [Getting started with Airbrake, Rails, &
-Heroku](/docs/ruby/0-60-airbrake-rails-31-heroku/), in which you will create a
-new rails app on heroku that integrates with airbrake.
