@@ -18,11 +18,19 @@ description: installing airbrake in a Go app
 
 ### Example usage
 
-To include Airbrake in your Go application you'll need to import the Gobrake
-code, available at
-[https://github.com/airbrake/gobrake](https://github.com/airbrake/gobrake). To
-configure the Go notifier you will need your `PROJECT ID` and `PROJECT API KEY` available
-from your project's settings page.
+To include Airbrake in your Go application navigate to your project's main
+directory and install our Go package, [gobrake][gobrake], using the `go get`
+command:
+
+```shell
+go get github.com/airbrake/gobrake/v4
+```
+
+Note: gobrake requires [Go Modules][go-mod] support.
+
+Next, follow the example below and make sure to obtain your `ProjectId` &
+`ProjectKey` from your project's settings page.
+
 
 ```go
 package main
@@ -30,17 +38,14 @@ package main
 import (
 	"errors"
 
-	"gopkg.in/airbrake/gobrake.v2"
+	"github.com/airbrake/gobrake/v4"
 )
 
-var airbrake = gobrake.NewNotifier(<Your project ID>, "<Your project API KEY>")
-
-func init() {
-	airbrake.AddFilter(func(notice *gobrake.Notice) *gobrake.Notice {
-		notice.Context["environment"] = "production"
-		return notice
-	})
-}
+var airbrake = gobrake.NewNotifierWithOptions(&gobrake.NotifierOptions{
+	ProjectId: 123456,
+	ProjectKey: "FIXME",
+	Environment: "production",
+})
 
 func main() {
 	defer airbrake.Close()
@@ -57,3 +62,6 @@ severity](https://github.com/airbrake/gobrake#setting-severity), or our [glog
 fork]() please visit our [official GitHub
 repo](https://github.com/airbrake/gobrake).
 Contributors always welcome!
+
+[gobrake]: https://github.com/airbrake/gobrake
+[go-mod]: https://github.com/golang/go/wiki/Modules
