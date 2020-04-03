@@ -18,7 +18,7 @@ Airbrake has many community maintained notifers for capturing exceptions in
 your applications. We also offer a couple of addons/plugins with 3rd parties.
 Below is a list of our favorites:
 
-- [Airbrake Cyrstal](https://github.com/kyrylo/airbrake-crystal)
+- [Airbrake Crystal](https://github.com/kyrylo/airbrake-crystal)
 - [Airbrake Rust](https://github.com/kyrylo/airbrake-rust)
 - [Airbrake Elixir](https://github.com/fazibear/airbrakex)
 - [New Relic Agent](http://newrelic.com/plugins/ironio/105)
