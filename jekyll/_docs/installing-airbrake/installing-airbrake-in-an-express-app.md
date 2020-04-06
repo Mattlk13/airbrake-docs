@@ -22,17 +22,12 @@ steps:
 npm install @airbrake/node
 ```
 
-We also support installation via
-[yarn](https://github.com/airbrake/airbrake-js/tree/master/packages/node#installation).
-
-
-#### 2. Include airbrake-js in your app
-Include the required airbrake-js libraries in your `app.js`
+#### 2. Include @airbrake/node and the Express.js instrumentation in your app
+Include the required Airbrake libraries in your `app.js`
 
 ```js
 const Airbrake = require('@airbrake/node');
 const airbrakeExpress = require('@airbrake/node/dist/instrumentation/express');
-const airbrakePG = require('@airbrake/node/dist/instrumentation/pg');
 ```
 
 #### 3. Configure Airbrake with your project's credentials
@@ -64,12 +59,10 @@ app.use(airbrakeExpress.makeErrorHandler(airbrake));
 The last step is to run your app. To test that you've configured Airbrake
 correctly, you can throw an error inside any of your routes:
 ```js
-app.get('/hello/:name', function hello(req, res) {
+app.get('/hello/:name', function hello(_req, _res) {
   throw new Error('hello from Express');
-  res.send(`Hello ${req.params.name}`);
 });
 ```
-
 
 Any unhandled errors that are thrown will now be reported to Airbrake. See the
 [basic usage](https://github.com/airbrake/airbrake-js/tree/master/packages/node#basic-usage)
