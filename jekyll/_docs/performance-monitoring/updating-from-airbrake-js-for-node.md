@@ -28,7 +28,7 @@ npm uninstall airbrake-js
 
 ## Step 2: Install `@airbrake/node`
 
-Install the new package with NPM:
+Install the new package with npm:
 
 ```shell
 npm install @airbrake/node
