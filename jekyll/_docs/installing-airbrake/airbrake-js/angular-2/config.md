@@ -3,9 +3,11 @@
 ### Create an error handler
 The first step is to create an error handler with a `Notifier`
 initialized with your `projectId` and `projectKey`. In this example the
-handler will be in a file called `error_handler.ts`.
+handler will be in a file called `airbrake-error-handler.ts`.
 
 ```ts
+// src/app/airbrake-error-handler.ts
+
 import { ErrorHandler } from '@angular/core';
 import { Notifier } from '@airbrake/browser';
 
@@ -15,7 +17,8 @@ export class AirbrakeErrorHandler implements ErrorHandler {
   constructor() {
     this.airbrake = new Notifier({
       projectId: 1,
-      projectKey: 'FIXME'
+      projectKey: 'FIXME',
+      environment: 'production'
     });
   }
 
@@ -27,15 +30,17 @@ export class AirbrakeErrorHandler implements ErrorHandler {
 
 ### Add the error handler to your `AppModule`
 
-The last step is adding the `ErrorHandler` to your `AppModule`, then your app
-will be ready to report errors to Airbrake.
+The last step is adding the `AirbrakeErrorHandler` to your `AppModule`, then
+your app will be ready to report errors to Airbrake.
 
 ```ts
+// src/app/app.module.ts
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AirbrakeErrorHandler } from './error_handler';
+import { AirbrakeErrorHandler } from './airbrake-error-handler';
 
 @NgModule({
   declarations: [
@@ -48,4 +53,11 @@ import { AirbrakeErrorHandler } from './error_handler';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+```
+
+To test that Airbrake has been installed correctly in your Angular project,
+just open up the JavaScript console in your internet browser and paste in:
+
+```js
+window.onerror("TestError: This is a test", "path/to/file.js", 123);
 ```
