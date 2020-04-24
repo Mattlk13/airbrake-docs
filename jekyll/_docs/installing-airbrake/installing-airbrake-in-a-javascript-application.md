@@ -13,7 +13,7 @@ description: Installing Airbrake in a Javascript application
 
 ## Supported frameworks
   - [AngularJS](/docs/installing-airbrake/installing-airbrake-in-an-angularjs-app/)
-  - [Angular 2 and above](/docs/installing-airbrake/installing-airbrake-in-an-angular-2-app/)
+  - [Angular](/docs/installing-airbrake/installing-airbrake-in-an-angular-app/)
   - [Browserify](/docs/installing-airbrake/installing-airbrake-in-a-browserify-app/)
   - [Express](/docs/installing-airbrake/installing-airbrake-in-an-express-app/)
   - [Legacy](https://github.com/airbrake/airbrake-js/tree/master/examples/legacy)

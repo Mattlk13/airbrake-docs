@@ -1,10 +1,10 @@
 ---
 layout: classic-docs
-title: Installing Airbrake in an Angular 2 application
-short-title: Angular 2
+title: Installing Airbrake in an Angular application
+short-title: Angular
 language: angular
 categories: [installing-airbrake]
-description: Installing Airbrake in an Angular 2 application
+description: Installing Airbrake in an Angular application
 ---
 
 ![](https://s3.amazonaws.com/document-resources/jsbrakeman.png)
@@ -15,6 +15,6 @@ description: Installing Airbrake in an Angular 2 application
 
 ## Configuration
 
-{% include_relative airbrake-js/angular-2/config.md %}
+{% include_relative airbrake-js/angular/config.md %}
 
 {% include_relative airbrake-js/going-further.md %}
