@@ -1,5 +1,3 @@
-### Usage with Angular
-
 ### Create an error handler
 The first step is to create an error handler with a `Notifier`
 initialized with your `projectId` and `projectKey`. In this example the

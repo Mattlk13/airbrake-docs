@@ -24,28 +24,10 @@ description: Installing Airbrake in a Javascript application
 
 {% include_relative airbrake-js/installation.md %}
 
-## Setup
-
-Starting from v2 @airbrake/browser uses [rollup.js](https://rollupjs.org) to provide 3 separate build formats:
-
-- dist/airbrake.iife.js - a self-executing function, suitable for inclusion as a <script> tag.
-- dist/airbrake.esm.js - an ES module file, suitable for other bundlers and inclusion as a <script type=module> tag in modern browsers.
-- dist/airbrake.common.js - CommonJS, suitable for Node.js and other bundlers.
-
-Your package manager should automatically pick suitable bundle format based on @airbrake/browser package.json file:
-
-```js
-  "main": "dist/airbrake.common.js",
-  "web": "dist/airbrake.iife.js",
-  "module": "dist/airbrake.esm.js",
-  "jsnext:main": "dist/airbrake.esm.js",
-  "types": "dist/airbrake.d.ts",
-  "source": "src/index.ts",
-```
-
 ## Basic Usage
 
-First you need to initialize the notifier with the project id and API key taken from [Airbrake.io](https://airbrake.io):
+First, initialize the notifier with the project ID and API key taken from
+[Airbrake](https://airbrake.io):
 
 ```js
 import { Notifier } from '@airbrake/browser';
@@ -57,11 +39,11 @@ const airbrake = new Notifier({
 });
 ```
 
-Then you can send a textual message to Airbrake:
+Then, you can send a textual message to Airbrake:
 
 ```js
 let promise = airbrake.notify(`user id=${user_id} not found`);
-promise.then(function(notice) {
+promise.then((notice) => {
   if (notice.id) {
     console.log('notice id', notice.id);
   } else {
@@ -70,29 +52,38 @@ promise.then(function(notice) {
 });
 ```
 
-Or report caught errors directly:
+or report errors directly:
 
 ```js
 try {
-  // This will throw if the document has no head tag
-  document.head.insertBefore(document.createElement('style'));
+  new Error('Hello from Airbrake!');
 } catch(err) {
   airbrake.notify(err);
   throw err;
 }
 ```
 
-Alternatively, you can wrap any code which may throw errors using the client's `wrap` method:
+Alternatively, you can wrap any code which may throw errors using the `wrap`
+method:
 
 ```js
-let startApp = function() {
-  // This will throw if the document has no head tag.
-  document.head.insertBefore(document.createElement('style'));
-}
+let startApp = () => {
+  new Error('Hello from Airbrake!');
+};
 startApp = airbrake.wrap(startApp);
 
 // Any exceptions thrown in startApp will be reported to Airbrake.
 startApp();
+```
+
+or use the `call` shortcut:
+
+```js
+let startApp = () => {
+  new Error('Hello from Airbrake!');
+};
+
+airbrake.call(startApp);
 ```
 
 {% include_relative airbrake-js/going-further.md %}
