@@ -1,6 +1,6 @@
 body {
   font-family: $sansFontFamily;
-  font-size: $fontDefault;
+  font-size: $ab-font-size-default;
   font-weight: 300;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
@@ -29,7 +29,8 @@ a:hover {
 
 .ab-sm-row-flex {
   min-height: 75vh;
-  @media (min-width: $screen-sm-min) {
+
+  @include media-breakpoint-up("md") {
     display: flex;
   }
 }
@@ -54,4 +55,34 @@ h5,
 .h4,
 .h5 {
   font-weight: 400;
+}
+
+pre {
+  margin: 0 0 10px;
+  padding: 1em;
+  font-size: $ab-font-size-small;
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+  color: $ab-grey-100;
+  background-color: $ab-grey-1000;
+}
+
+// Copied from Bootstrap 3 - maybe we can extract this to a class
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+// Copied from Bootstrap 3 - maybe we can extract this to a class
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
 }

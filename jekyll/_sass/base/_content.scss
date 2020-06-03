@@ -2,7 +2,7 @@
   background: $ab-white;
   min-height: 75vh;
 
-  @media (min-width: $screen-sm-min) {
+  @include media-breakpoint-up("md") {
     box-shadow: inset 1px 0px 0px $ab-grey-800;
   }
 }
@@ -11,9 +11,9 @@
   max-width: 850px;
   padding: $padding-sidebar-content;
   color: $ab-grey-300;
-  font-size: $fontXDefault;
+  font-size: $ab-font-size-x-default;
 
-  @media (min-width: $screen-sm-min) {
+  @include media-breakpoint-up("md") {
     padding: 2em;
   }
 

@@ -7,10 +7,12 @@ layout: classic-docs
   {% for doc in install_docs %}
     {% assign doc_title = doc.short-title | default: doc.title %}
     {% if doc.slug != page.slug %}
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-      <a class="thumbnail btn btn-default" href="{{ site.baseurl }}{{ doc.url }}">
-        <img src="/docs/assets/img/docs/languages/{{doc.language}}.png" alt=""/>
-        <div class="text-center doc-title">{{ doc_title }}</div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+      <a class="card btn btn--link-color mb-3 py-0" href="{{ site.baseurl }}{{ doc.url }}">
+        <div class="card-body">
+          <img src="/docs/assets/img/docs/languages/{{doc.language}}.png" alt=""/>
+          <div class="text-center doc-title">{{ doc_title }}</div>
+        </div>
       </a>
     </div>
     {% endif %}
