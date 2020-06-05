@@ -45,7 +45,7 @@ airbrake.addFilter(function(notice) {
 
 ```go
 airbrake.AddFilter(func(notice *gobrake.Notice) *gobrake.Notice {
-  if notice.Errors[0]Type == "NoisyException" {
+  if notice.Errors[0].Type == "NoisyException" {
     return nil
   }
   return notice
