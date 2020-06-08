@@ -24,8 +24,7 @@ get you the rest of the way.
 ### Which Airbrake notifiers are Performance Monitoring compatible?
 
 We currently support Performance Monitoring tracking for
-[Rails](/docs/performance-monitoring/getting-started/) and have beta
-Performance Monitoring support for
+[Rails](/docs/performance-monitoring/getting-started/),
 [Node.js (Express.js)](/docs/performance-monitoring/updating-your-node-notifier/),
 [Go](/docs/performance-monitoring/go/),
 [Django](/docs/performance-monitoring/django/), and
