@@ -9,9 +9,6 @@ description: SAML single sign-on
 SAML single sign-on allows your team to log in via [Okta](https://www.okta.com)
 or [OneLogin](https://www.onelogin.com).
 
-_**Note:** Single sign-on is a premium feature available to all accounts on our
-Business plan ($599/month) and larger._
-
 Below you can find the configuration documentation for Okta and OneLogin.
 
 ## Okta
