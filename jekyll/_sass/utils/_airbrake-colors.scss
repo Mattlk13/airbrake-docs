@@ -1,6 +1,5 @@
 // Keep synced these files
-// https://github.com/airbrake/airbrake-app/blob/master/app/assets/stylesheets/_airbrake-colors.scss
-// https://github.com/airbrake/airbrake-app/blob/master/engines/marketing/app/assets/stylesheets/marketing/utils/_airbrake-colors.scss
+// https://github.com/airbrake/airbrake-app/blob/master/app/assets/stylesheets/utils/_airbrake-colors.scss
 // https://github.com/airbrake/airbrake-ng/blob/master/src/less/airbrake-colors.less
 
 // stylelint-disable
@@ -13,6 +12,7 @@ $ab-grey-600: #939393;
 $ab-grey-700: #b8b8b8;
 $ab-grey-800: #d0d0d0;
 $ab-grey-900: #e5e5e5;
+$ab-grey-1000: #f5f5f5; // really low contrast grey - use with caution
 
 $ab-green-100: #00451c;
 $ab-green-200: #007e33;

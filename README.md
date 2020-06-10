@@ -41,6 +41,25 @@ of your terminal, just type `CTRL-C`. Jekyll knows when you edit a file and will
 generate the new version, the new version will render after a few
 moments/refreshes ;).
 
+#### Bootstrap
+
+The official Bootstrap's plugin for Jekyll is deprecated so we take the approach
+from [this article](https://phalski.com/using-bootstrap-jekyll-gem-theme.html)
+to handle Bootstrap, which is basically:
+
+- Installing Bootstrap 4 as a gem
+- Copying the assets from
+  [Bootstrap 4 rubygem](https://github.com/twbs/bootstrap-rubygem) to Jekyll's
+  assets folder
+
+The rake tasks are the following. Make sure you run them after doing any
+versioning change in the vendor files:
+
+```sh
+rake clean
+rake copy
+```
+
 ####  Editing Docs
 
 All of the docs can be found in the `jekyll/_docs` directory. You can make any

@@ -1,11 +1,27 @@
-// Font size
-$fontSmall: 13px;
-$fontDefault: 16px;
-$fontXDefault: 18px;
-$fontLarge: 20px;
-$fontXLarge: 25px;
-$fontXXLarge: 32px;
-$fontXXXLarge: 52px;
+// Airbrake typographic scale
+$ab-font-size-x-small:    11px;
+$ab-font-size-small:      13px;
+$ab-font-size-default:    16px;
+$ab-font-size-x-default:  18px;
+$ab-font-size-large:      20px;
+$ab-font-size-x-large:    25px;
+$ab-font-size-xx-large:   32px;
+$ab-font-size-xxx-large:  48px;
+
+// Airbrake typographic scale - rem
+// Convert from px to rem to make it work with Bootstrap 4
+$ab-font-size-small: 0.8125rem;
+
+// Replace Bootstrap font sizes with Airbrake typographic scale
+$font-size-base:          $ab-font-size-small;
+$font-size-large:         $ab-font-size-default;
+$font-size-small:         $ab-font-size-x-small;
+$h1-font-size:            $ab-font-size-xx-large;
+$h2-font-size:            $ab-font-size-x-large;
+$h3-font-size:            $ab-font-size-large;
+$h4-font-size:            $ab-font-size-default;
+$h5-font-size:            $ab-font-size-small;
+$h6-font-size:            $ab-font-size-x-small;
 
 // Viewports
 $viewportSmall: 768px;
