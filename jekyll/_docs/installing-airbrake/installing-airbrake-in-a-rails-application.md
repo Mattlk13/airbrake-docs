@@ -86,8 +86,8 @@ block in `config/initializers/airbrake.rb`
 
 ## Filtering keys
 You can use
-[blacklist](https://github.com/airbrake/airbrake-ruby#blacklist_keys) or
-[whitelist](https://github.com/airbrake/airbrake-ruby#whitelist_keys) filtering
+[blocklist](https://github.com/airbrake/airbrake-ruby#blocklist_keys) or
+[allowlist](https://github.com/airbrake/airbrake-ruby#allowlist_keys) filtering
 to specify keys to filter [out of the payload](https://airbrake.io/docs/api/#create-notice-v3)
 (`environment`, `parameters`, `session`, etc). Before sending an
 error, filtered keys will be substituted with the `[Filtered]` label.

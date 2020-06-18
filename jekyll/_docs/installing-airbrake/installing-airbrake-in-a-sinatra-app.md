@@ -68,7 +68,7 @@ For advanced configuration options like
 [ignoring errors](https://github.com/airbrake/airbrake-ruby#airbrakeadd_filter),
 [adding extra context](https://github.com/airbrake/airbrake-ruby#airbrakenotify),
 [appending info from requests](https://github.com/airbrake/airbrake#appending-information-from-rack-requests),
-[filtering sensitive information](https://github.com/airbrake/airbrake-ruby#blacklist_keys),
+[filtering sensitive information](https://github.com/airbrake/airbrake-ruby#blocklist_keys),
 and more please visit the
 [airbrake-ruby](https://github.com/airbrake/airbrake-ruby) and
 [airbrake](https://github.com/airbrake/airbrake#sinatra) GitHub repos.

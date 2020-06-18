@@ -77,5 +77,5 @@ puts "Another ZeroDivisionError was sent to Airbrake synchronously!",
 For advanced configuration options like
 [ignoring errors](https://github.com/airbrake/airbrake-ruby#airbrakeadd_filter),
 [adding extra context](https://github.com/airbrake/airbrake-ruby#airbrakenotify),
-and [filtering sensitive information](https://github.com/airbrake/airbrake-ruby#blacklist_keys)
+and [filtering sensitive information](https://github.com/airbrake/airbrake-ruby#blocklist_keys)
 please visit our [official GitHub repo](https://github.com/airbrake/airbrake-ruby).
