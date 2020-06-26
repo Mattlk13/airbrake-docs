@@ -13,9 +13,3 @@
     float: left;
   }
 }
-
-// Unstyled list
-@mixin ab-list-unstyled() {
-  padding-left: 0;
-  list-style: none;
-}

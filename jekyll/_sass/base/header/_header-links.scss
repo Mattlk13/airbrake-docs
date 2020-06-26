@@ -15,7 +15,6 @@
 }
 
 .header-links__list {
-  @include ab-list-unstyled();
   @media ($greaterThanSmall) {
     @include ab-list-inline();
   }
