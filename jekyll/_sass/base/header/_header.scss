@@ -16,7 +16,7 @@
   color: $ab-grey-800;
   -webkit-font-smoothing: auto;
 
-  @media ($greaterThanSmall) {
+  @include media-breakpoint-up("md") {
     // line-height determined by .header-logo which contains
     // the logo (58px height) plus 30px of vertical padding
     line-height: 88px;
