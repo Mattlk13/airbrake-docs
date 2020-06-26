@@ -13,3 +13,13 @@
     float: left;
   }
 }
+
+// Makes an element absolute positioned and stretches it to the edges of the
+// first ancestor with position: relative
+@mixin ab-absolute-to-edges(){
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
