@@ -2,7 +2,7 @@
 layout: classic-docs
 ---
 
-<div class="row" id="install-guides">
+<div class="row">
   {% assign install_docs = site.docs | where: "categories", "installing-airbrake" | sort: "language" %}
   {% for doc in install_docs %}
     {% assign doc_title = doc.short-title | default: doc.title %}
@@ -10,8 +10,8 @@ layout: classic-docs
     <div class="col-xl-3 col-lg-3 col-md-6 col-6">
       <a class="card btn btn--link-color mb-3 py-0" href="{{ site.baseurl }}{{ doc.url }}">
         <div class="card-body">
-          <img src="/docs/assets/img/docs/languages/{{doc.language}}.png" alt=""/>
-          <div class="text-center doc-title">{{ doc_title }}</div>
+          <img class="install-guides-img" src="/docs/assets/img/docs/languages/{{doc.language}}.png" alt=""/>
+          <div class="text-center pt-2">{{ doc_title }}</div>
         </div>
       </a>
     </div>

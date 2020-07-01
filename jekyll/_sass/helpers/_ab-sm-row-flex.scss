@@ -1,0 +1,7 @@
+.ab-sm-row-flex {
+  min-height: 75vh;
+
+  @include media-breakpoint-up("md") {
+    display: flex;
+  }
+}

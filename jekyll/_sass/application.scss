@@ -17,7 +17,15 @@
   "base/header",
   "base/sidebar";
 
-// 4. Modules
+// 4. Helpers
+@import
+  "helpers/ab-sm-row-flex",
+  "helpers/category-flex-row",
+  "helpers/container-fluid-grey",
+  "helpers/content-wrap",
+  "helpers/highlight";
+
+// 5. Modules
 @import
   "modules/content-separator",
   "modules/image-list",
