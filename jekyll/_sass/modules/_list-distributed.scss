@@ -3,7 +3,7 @@
     margin: 1em;
   }
 
-  @media ($greaterThanLarge) {
+  @include media-breakpoint-up("lg") {
     display: flex;
     justify-content: space-between;
   }

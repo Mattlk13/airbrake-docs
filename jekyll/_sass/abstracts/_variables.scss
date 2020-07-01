@@ -1,6 +1,6 @@
 // Airbrake typographic scale
 $ab-font-size-x-small:    11px;
-$ab-font-size-small:      13px;
+$ab-font-size-small: 0.8125rem; // 13px - using rem to make it work with Bootstrap 4
 $ab-font-size-default:    16px;
 $ab-font-size-x-default:  18px;
 $ab-font-size-large:      20px;
@@ -8,38 +8,48 @@ $ab-font-size-x-large:    25px;
 $ab-font-size-xx-large:   32px;
 $ab-font-size-xxx-large:  48px;
 
-// Airbrake typographic scale - rem
-// Convert from px to rem to make it work with Bootstrap 4
-$ab-font-size-small: 0.8125rem;
+$navbar-default-bg: $ab-grey-200;
+$panel-default-heading-bg: $ab-grey-900;
+$login-background-color: $ab-grey-900;
 
-// Replace Bootstrap font sizes with Airbrake typographic scale
-$font-size-base:          $ab-font-size-small;
-$font-size-large:         $ab-font-size-default;
-$font-size-small:         $ab-font-size-x-small;
-$h1-font-size:            $ab-font-size-xx-large;
-$h2-font-size:            $ab-font-size-x-large;
-$h3-font-size:            $ab-font-size-large;
-$h4-font-size:            $ab-font-size-default;
-$h5-font-size:            $ab-font-size-small;
-$h6-font-size:            $ab-font-size-x-small;
+$marketing-bkg-gradient: linear-gradient(to right, $ab-blue-100, $ab-blue-400);
+$marketing-bkg-gradient-transparent: linear-gradient(to right, rgba($ab-blue-100, 0.9), rgba($ab-blue-400, 0.9));
 
-// Viewports
-$viewportSmall: 768px;
-$viewportLarge: 980px;
-$viewportXLarge: 1200px;
+// Bootstrap 4 Customization
+// -------------------------
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
 
-// Breakpoints
-$greaterThanSmall: "min-width: " + $viewportSmall;
-$lessThanSmall: "max-width: " + ($viewportSmall - 1);
+$line-height-base:        1.428571429; // 20/14
 
-$greaterThanLarge: "min-width: " + $viewportLarge;
-$lessThanLarge: "max-width: " + ($viewportLarge - 1);
+$spacer: 20px;
 
-$greaterThanXLarge: "min-width: " + $viewportXLarge;
-$lessThanXLarge: "max-width: " + ($viewportXLarge - 1);
+$font-size-base:  $ab-font-size-small;
+$h1-font-size:    $ab-font-size-xx-large;
+$h2-font-size:    $ab-font-size-x-large;
+$h3-font-size:    $ab-font-size-large;
+$h4-font-size:    $ab-font-size-default;
+$h5-font-size:    $ab-font-size-small;
+$h6-font-size:    $ab-font-size-x-small;
 
-// Typography
-$sansFontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family: inherit;
+$headings-font-weight: 400;
+$headings-line-height: 1.1;
+$headings-color: inherit;
 
-// Layout
-$padding-sidebar-content: 20px 0;
+$input-height: 30px; // base line-height + 8px vertical padding + 2px top/bottom border
+
+$grid-gutter-width: 40px;
+
+$border-radius: 3px;
+
+$primary: $ab-blue-400;
+$success: $ab-green-400;
+$info: $ab-blue-400;
+
+$body-color: $ab-grey-400;
+
+$pagination-disabled-bg: $ab-grey-1000;
+
+$link-color: $ab-blue-400;

@@ -1,9 +1,11 @@
 .image-list {
-  margin-top: 3em;
+  margin: 3em 0;
 
   li {
-    @media ($lessThanSmall) {
-      margin-bottom: 4em;
+    margin-bottom: 4em;
+
+    @include media-breakpoint-up("md") {
+      margin-bottom: 0;
     }
   }
 }
@@ -13,9 +15,15 @@
 }
 
 .image-list__image {
-  @media ($greaterThanSmall) {
+  @include media-breakpoint-up("md") {
     max-width: 80%;
   }
+}
+
+.image-list__icon {
+  margin-top: 2em;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .image-list__title {
