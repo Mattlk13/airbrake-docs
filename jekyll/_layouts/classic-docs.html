@@ -5,14 +5,14 @@
   {% if jekyll.environment == "production" %}
   {% endif %}
   {% include global-nav.html %}
-  <div class="container-fluid container-fluid--ab">
+  <div class="container-fluid container-fluid-grey">
     <div class="row ab-sm-row-flex">
       <div class="col-md-4 col-lg-4 col-xl-3">
         {% include sidebar.html %}
       </div>
       <div class="col-md-8 col-lg-8 col-xl-9 content-wrap">
-        <div class="content" {% if page.path == "index.html" %}id="index-content"{% endif %}>
-          <form id="site-search" class="site-search" action="">
+        <div class="content{% if page.path == 'index.html' %} content--wide{% endif %}">
+          <form id="site-search" class="position-relative" action="">
             <input type="text" autocomplete="off" placeholder="What can we help you find?" name="query" class="form-control">
             <ul id="search-results" class="list-unstyled dropdown-menu"></ul>
           </form>

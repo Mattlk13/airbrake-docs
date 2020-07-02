@@ -1,12 +1,3 @@
-.content-wrap {
-  background: $ab-white;
-  min-height: 75vh;
-
-  @include media-breakpoint-up("md") {
-    box-shadow: inset 1px 0px 0px $ab-grey-800;
-  }
-}
-
 .content {
   max-width: 850px;
   padding: $spacer 0;
@@ -51,36 +42,6 @@
   }
 }
 
-#index-content { max-width: 1200px; }
-
-.category-flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  margin-left: -15px;
-  margin-right: -15px;
-
-  div {
-    @media (max-width: 1100px) {
-      flex-basis: 100%;
-    }
-    flex-basis: 49%;
-
-    margin-top: 27px;
-    padding: 18px;
-
-    border: 1px solid $ab-grey-900;
-    border-radius: 5px;
-  }
-
-  h2 {
-    margin-top: 0;
-    margin-bottom: 18px;
-  }
-}
-
-#install-guides {
-  img { height: 6em; }
-  .doc-title { padding-top: 1em; }
+.content--wide {
+  max-width: 1200px;
 }
