@@ -17,6 +17,15 @@
   "base/header",
   "base/sidebar";
 
+// Bootstrap overrides
+@import
+  "bootstrap-overrides/badge",
+  "bootstrap-overrides/btn-group",
+  "bootstrap-overrides/card-header",
+  "bootstrap-overrides/dropdown",
+  "bootstrap-overrides/pagination",
+  "bootstrap-overrides/tooltip";
+
 // Helpers
 @import
   "helpers/ab-sm-row-flex",

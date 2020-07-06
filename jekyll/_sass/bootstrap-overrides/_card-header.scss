@@ -1,0 +1,28 @@
+.card-header {
+  padding: 0;
+  position: relative;
+  font-size: $ab-font-size-default;
+  color: $ab-blue-400;
+  background: transparent;
+  border-bottom: 1px solid $ab-grey-900;
+  transition: padding 0.1s linear;
+
+  &:hover,
+  &:focus {
+    background: $ab-grey-900;
+    padding-left: 5px;
+    color: $ab-blue-200;
+  }
+
+  .btn-link {
+    all: unset;
+    width: 100%;
+    padding: 10px 0;
+
+    &:disabled {
+      opacity: 0.4;
+      color: $ab-grey-500;
+      cursor: not-allowed;
+    }
+  }
+}
