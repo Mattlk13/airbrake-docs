@@ -28,14 +28,13 @@
 
 // Helpers
 @import
-  "helpers/ab-sm-row-flex",
-  "helpers/category-flex-row",
-  "helpers/container-fluid-grey",
+  "helpers/bkg-grey",
   "helpers/content-wrap",
   "helpers/highlight";
 
 // Modules
 @import
   "modules/content-separator",
+  "modules/home-categories",
   "modules/image-list",
   "modules/list-distributed";
