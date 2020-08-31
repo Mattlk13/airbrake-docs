@@ -18,9 +18,6 @@ You will be notified when another team member comments on an exception
 Only receive notifications from errors that occur in the `production`
 environment.
 
-### **Rate limit notification emails**
-Receive an email each day your account reaches its rate limit.
-
 ### **Automatically subscribe to new projects**
 When a new project is added you will be subscribed to that project
 automatically. **This option is only available to admins on the account**

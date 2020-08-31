@@ -6,8 +6,7 @@ description: rejected errors
 ---
 
 > Note: Rejected errors are different from error loss due to depleting your
-> [monthly quota](/docs/airbrake-faq/monthly-error-quota) or exceeding your
-> [rate limit](/docs/airbrake-faq/what-is-a-rate-limit).
+> [monthly quota](/docs/airbrake-faq/monthly-error-quota).
 
 # Reasons for error rejections
 
