@@ -40,19 +40,8 @@ only pay for the number of requests that are monitored by Airbrake.
 
 Pricing for Airbrake Performance Monitoring is based on the number of requests
 monitored in the monthly billing period. Each month includes a free amount of
-usage, making it free and easy to try.
-
-| Requests monitored | Price      |
-|--------------------|------------|
-| Up to 50 thousand  | Free       |
-| Up to 5 million    | $99        |
-| Up to 10 million   | $149       |
-| Up to 20 million   | $249       |
-| Up to 50 million   | $399       |
-| Up to 100 million  | $599       |
-| Up to 200 million  | $899       |
-| Up to 500 million  | $1299      |
-| Up to ∞            | [Contact us](mailto:sales@airbrake.io) |
+usage, making it free and easy to try. You can check the current costs in
+[https://airbrake.io/account/edit](https://airbrake.io/account/edit).
 
 ### What is a Performance Monitoring request?
 
