@@ -31,27 +31,48 @@ extremely lightweight, with minimal overhead.
 * Support for code hunks (lines of code surrounding each backtrace frame)
 * Automatic deploy tracking
 * Performance monitoring features such as HTTP route statistics, SQL queries,
-	and Job execution statistics
-* Integrations with Beego and Gin
+  and Job execution statistics
+* Integrations with Beego, Gin and Negroni
 * Last but not least, we follow semantic versioning 2.0.0
 * [Send errors from glog to Airbrake](https://github.com/airbrake/glog)
 
 ## Installation
 
-To include Airbrake in your Go application navigate to your project's main
-directory and install our Go package, `gobrake`, using the `go get`
-command:
+### Go modules
 
-```shell
-go get github.com/airbrake/gobrake/v4
+Gobrake can be installed like any other Go package that supports [Go
+modules][go-mod].
+
+#### Installing in an existing project
+
+Just `go get` the library:
+
+```sh
+go get github.com/airbrake/gobrake/v5
 ```
 
-Next, import and initialize the `gobrake` package in your application:
+#### Installing in a new project
+
+Create a new directory, initialize a new module and `go get` the library:
+
+```sh
+mkdir airbrake_example && cd airbrake_example
+go mod init airbrake_example
+go get github.com/airbrake/gobrake/v5
+```
+
+## Example
+
+This is the minimal example that you can use to test Gobrake with your project.
 
 ```go
 package main
 
-import "github.com/airbrake/gobrake/v4"
+import (
+	"errors"
+
+	"github.com/airbrake/gobrake/v5"
+)
 
 var airbrake = gobrake.NewNotifierWithOptions(&gobrake.NotifierOptions{
 	ProjectId: <YOUR PROJECT ID>,
@@ -62,6 +83,8 @@ var airbrake = gobrake.NewNotifierWithOptions(&gobrake.NotifierOptions{
 func main() {
 	defer airbrake.Close()
 	defer airbrake.NotifyOnPanic()
+
+	airbrake.Notify(errors.New("operation failed"), nil)
 }
 ```
 
@@ -96,3 +119,4 @@ and more.
 [gobrake]: https://github.com/airbrake/gobrake
 [gobrake/ignore]: https://github.com/airbrake/gobrake#ignoring-notices
 [gobrake/severity]: https://github.com/airbrake/gobrake#setting-severity
+[go-mod]: https://github.com/golang/go/wiki/Modules
