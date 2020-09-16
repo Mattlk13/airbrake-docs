@@ -15,7 +15,7 @@ description: Installing Airbrake in a Javascript application
   - [AngularJS](/docs/installing-airbrake/installing-airbrake-in-an-angularjs-app/)
   - [Angular](/docs/installing-airbrake/installing-airbrake-in-an-angular-app/)
   - [Express](/docs/installing-airbrake/installing-airbrake-in-an-express-app/)
-  - [Legacy](https://github.com/airbrake/airbrake-js/tree/master/examples/legacy)
+  - [Legacy](https://github.com/airbrake/airbrake-js/blob/master/packages/browser/examples/legacy)
   - [Node.js](/docs/installing-airbrake/installing-airbrake-in-a-node-app/)
   - [Rails](/docs/installing-airbrake/installing-airbrake-js-in-a-rails-app/)
   - [React](/docs/installing-airbrake/installing-airbrake-in-a-react-app/)
