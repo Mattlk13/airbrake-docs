@@ -8,7 +8,7 @@ description: Usage caps
 - Airbrake plans have pre-paid error/performance quotas along with on-demand
   errors/events
 - Errors and performance events beyond your monthly plan quota will be charged
-  on an usage basis
+  on a usage basis
 - A monthly cap can be set to prevent additional errors from being processed
   beyond that number
   - This cap can be set for your entire account, and/or independently for each
