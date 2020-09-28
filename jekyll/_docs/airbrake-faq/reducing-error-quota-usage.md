@@ -9,13 +9,6 @@ If your applications are sending more errors than your plan allows, this can
 result in error loss and reduced debugging effectiveness. There are several
 options to reduce your error quota usage.
 
-### Setting a rate limit
-
-All monthly quota plans support configuring a per minute rate limit. This value
-controls how many errors will be accepted each minute for your account. Any
-account admin can configure the rate limit per minute from the [account
-settings](https://airbrake.io/account/adjust-rate-limit).
-
 ### Ignore noisy errors
 
 Once you have identified a noisy error you can configure your notifier to avoid
