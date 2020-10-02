@@ -8,11 +8,11 @@ $( document ).ready(function() {
     window.location = $(this).find("option:selected").val();
   });
 
-  // open intercom when the contact us link is clicked
-  $("#contact-us").click(function() {
-    if ($("#intercom-container").length) {
-      event.preventDefault();
-      Intercom('show');
+  // open HubSpot widget when the contact us link is clicked
+  $("#contact-us").on('click', function(e) {
+    if (window.HubSpotConversations) {
+      e.preventDefault();
+      window.HubSpotConversations.widget.open();
     }
   });
 
