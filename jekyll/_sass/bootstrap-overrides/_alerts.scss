@@ -1,0 +1,57 @@
+.alerts-container {
+  flex-shrink: 0;
+
+  .alert {
+    margin-bottom: 0;
+  }
+}
+
+.alert {
+  z-index: 1;
+  color: $ab-white;
+  font-size: $ab-font-size-default;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.alert--small {
+  font-size: $ab-font-size-small;
+}
+
+.alert-danger {
+  background-color: $ab-red-400;
+  border-color: $ab-red-400;
+}
+
+.alert-warning {
+  background-color: $ab-orange-400;
+  border-color: $ab-orange-400;
+}
+
+.alert-success {
+  background-color: $ab-green-400;
+  border-color: $ab-green-400;
+}
+
+.alert-info {
+  background-color: $ab-blue-400;
+  border-color: $ab-blue-400;
+}
+
+.alert-link {
+  color: $ab-white !important; // Override Bootstrap's selector
+  text-decoration: underline;
+
+  &:hover {
+    color: $ab-grey-100 !important; // Override Bootstrap's selector
+  }
+}
+
+.alert__icon {
+  $margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -$margin;
+  margin-right: $margin;
+  margin-bottom: -$margin;
+}
