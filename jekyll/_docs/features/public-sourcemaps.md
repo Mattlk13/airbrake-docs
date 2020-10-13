@@ -22,8 +22,7 @@ app](/docs/installing-airbrake/installing-airbrake-in-a-javascript-application).
 
 In order to enable source map support you have to specify the path to the
 source map file according to
-[the source map specification](https://docs.google.com/document/d/1U1RGAehQwRyp
-UTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#heading=h.lmz475t4mvbx).
+[the source map specification](https://sourcemaps.info/spec.html).
 For example, `airbrake.min.js` has the following line:
 
 ```

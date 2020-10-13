@@ -21,3 +21,6 @@ collections:
 
 twitter_username: airbrake
 github_username:  airbrake
+
+plugins:
+  - jekyll-target-blank
