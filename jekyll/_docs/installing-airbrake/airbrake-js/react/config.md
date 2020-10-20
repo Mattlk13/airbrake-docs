@@ -1,17 +1,18 @@
-### React error handler
+# Usage with React
 
 To report errors from a React app, you'll need to set up and use an
 [`ErrorBoundary` component](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)
-and initialize an `AirbrakeClient` with your `projectId` and `projectKey`.
+and initialize a `Notifier` with your `projectId` and `projectKey`.
 
 ```js
-import AirbrakeClient from 'airbrake-js';
+import React, { Component } from 'react';
+import { Notifier } from '@airbrake/browser';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
-    this.airbrake = new AirbrakeClient({
+    this.airbrake = new Notifier({
       projectId: 1,
       projectKey: 'FIXME'
     });
@@ -35,6 +36,8 @@ class ErrorBoundary extends React.Component {
     return this.props.children;
   }
 }
+
+export default ErrorBoundary;
 ```
 
 Then you can use it as a regular component:

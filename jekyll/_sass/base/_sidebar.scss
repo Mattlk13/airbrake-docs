@@ -1,5 +1,5 @@
 .sidebar {
-  padding: $padding-sidebar-content;
+  padding: $spacer 0;
 }
 
 .mobile-nav {
@@ -16,7 +16,7 @@ $spacer: 0.8em;
   display: block;
   margin-left: $spacer;
   padding: $spacer/2 $spacer;
-  font-size: $fontSmall;
+  font-size: $ab-font-size-small;
   line-height: 1.5;
 
   &:hover {

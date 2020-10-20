@@ -1,0 +1,17 @@
+.home-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-categories__category {
+  margin-top: 27px;
+  padding: 18px;
+  border: 1px solid $ab-grey-900;
+  border-radius: 5px;
+  flex-basis: 100%;
+
+  @include media-breakpoint-up("lg") {
+    flex-basis: 49%;
+  }
+}

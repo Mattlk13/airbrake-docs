@@ -26,12 +26,8 @@ responsibilities.
 Open up your `Gemfile` in your favorite text editor and add the `airbrake` gem.
 
 {% highlight ruby %}
-gem 'airbrake', '~> 5.4'
+gem 'airbrake'
 {% endhighlight %}
-
-> **NOTE:** This version could be out of date, [the
-README](https://github.com/airbrake/airbrake#bundler) will always have the
-correct version.
 
 To install the Airbrake gem, run from the root directory of your application.
 
@@ -90,8 +86,8 @@ block in `config/initializers/airbrake.rb`
 
 ## Filtering keys
 You can use
-[blacklist](https://github.com/airbrake/airbrake-ruby#blacklist_keys) or
-[whitelist](https://github.com/airbrake/airbrake-ruby#whitelist_keys) filtering
+[blocklist](https://github.com/airbrake/airbrake-ruby#blocklist_keys) or
+[allowlist](https://github.com/airbrake/airbrake-ruby#allowlist_keys) filtering
 to specify keys to filter [out of the payload](https://airbrake.io/docs/api/#create-notice-v3)
 (`environment`, `parameters`, `session`, etc). Before sending an
 error, filtered keys will be substituted with the `[Filtered]` label.
@@ -142,8 +138,3 @@ frameworks:
 ## More information available on GitHub
 Please visit the [Airbrake gem repo](https://github.com/airbrake/airbrake)
 for more configuration options, use cases, examples, and tips.
-
-## Looking for the Heroku guide?
-If so, you may prefer [Getting started with Airbrake, Rails, &
-Heroku](/docs/ruby/0-60-airbrake-rails-31-heroku/), in which you will create a
-new rails app on heroku that integrates with airbrake.

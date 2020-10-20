@@ -1,17 +1,13 @@
 ---
 layout: classic-docs
 title: Performance Monitoring for Django apps
-short-title: Performance Monitoring for Django
+short-title: Monitoring Django apps
 categories: [performance-monitoring]
+group: Python Performance Monitoring
 description: Performance Monitoring for Django
 ---
 
-Application Performance Monitoring with Airbrake makes it easy to:
-- See a broad performance overview for your whole application
-- Measure user satisfaction with your app performance using Apdex
-- Identify routes with problematic performance
-- Zoom into specific endpoints to see time spent in the DB, view, cache,
-  external requests, and more
+{% include_relative partials/features-list.md %}
 
 ## Django Support
 
@@ -23,14 +19,7 @@ data so let's jump right in!
 
 {% include django-install.md %}
 
-## Congratulations!
-
-Great job! Just visit your Airbrake project's Performance Dashboard to see route
-data for your app. Soon enough you'll have more insights into your application's
-performance. In the meantime why not check out the [Performance Dashboard
-features](/docs/performance-monitoring/performance-dashboard-features/). If you
-have questions about Performance Monitoring, visit the [Performance Monitoring
-FAQ](/docs/performance-monitoring/frequently-asked-questions/).
+{% include_relative partials/congratulations.md %}
 
 ### Want to learn more?
 

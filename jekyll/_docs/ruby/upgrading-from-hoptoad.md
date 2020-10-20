@@ -30,13 +30,8 @@ Airbrake.notify(err)
 
 Upgrade to the latest version of our gem by updating your Gemfile:
 
-_**Note:** our gem is
-updated frequently, you can always find the current version on
-[RubyGems](https://rubygems.org/gems/airbrake) or on [our
-GitHub](https://github.com/airbrake/airbrake/releases)._
-
 ```rb
-gem 'airbrake', '~> 9.5'
+gem 'airbrake'
 ```
 
 Then run the update command to update our main gem and the `airbrake-ruby` gem
@@ -66,9 +61,3 @@ Overwrite /Users/arthur/my-app/config/initializers/airbrake.rb? (enter "h" for h
 
 For a full migration guide, check out
 [our doc on GitHub](https://github.com/airbrake/airbrake/blob/master/docs/Migration_guide_from_v4_to_v5.md).
-
-_**Note:** by default, current versions of our gem monitor performance along
-with errors. If you want to disable performance monitoring, set [the
-`performance_stats`
-option](https://github.com/airbrake/airbrake-ruby#performance_stats) to
-`false`._

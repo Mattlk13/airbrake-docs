@@ -5,14 +5,14 @@
   {% if jekyll.environment == "production" %}
   {% endif %}
   {% include global-nav.html %}
-  <div class="container-fluid container-fluid--ab">
-    <div class="row ab-sm-row-flex">
-      <div class="col-sm-4 col-md-4 col-lg-3">
+  <div class="container-fluid bkg-grey">
+    <div class="row">
+      <div class="col-md-4 col-lg-4 col-xl-3">
         {% include sidebar.html %}
       </div>
-      <div class="col-sm-8 col-md-8 col-lg-9 content-wrap">
-        <div class="content" {% if page.path == "index.html" %}id="index-content"{% endif %}>
-          <form id="site-search" class="site-search" action="">
+      <div class="col-md-8 col-lg-8 col-xl-9 content-wrap">
+        <div class="content{% if page.path == 'index.html' %} content--wide{% endif %}">
+          <form id="site-search" class="position-relative" action="">
             <input type="text" autocomplete="off" placeholder="What can we help you find?" name="query" class="form-control">
             <ul id="search-results" class="list-unstyled dropdown-menu"></ul>
           </form>
@@ -30,9 +30,9 @@
   {% include global-footer.html %}
   <script src="{{ site.baseurl }}/assets/js/lunr.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/vendor/popper.js/javascripts/popper.js"></script>
+  <script src="{{ site.baseurl }}/assets/vendor/bootstrap/javascripts/bootstrap.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/search.js"></script>
   <script src="{{ site.baseurl }}/assets/js/main.js"></script>
-  <script src="{{ site.baseurl }}/assets/javascripts/bootstrap/transition.js" ></script>
-  <script src="{{ site.baseurl }}/assets/javascripts/bootstrap/collapse.js" ></script>
 </body>
 </html>

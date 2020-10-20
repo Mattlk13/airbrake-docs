@@ -1,0 +1,26 @@
+---
+layout: classic-docs
+---
+
+{% assign category = page.categories[0] %}
+<ul class="list-unstyled">
+{% if category == "api-2" %}
+  <li><strong>
+    <a href="https://airbrake.io/docs/api/">Full API Reference</a>
+  </strong></li>
+{% endif %}
+
+{% assign docs = site.docs | where: "categories", category %}
+{% assign groups = page.groups %}
+
+{% for group in page.groups %}
+  {% assign group_docs = docs | where: "group", group | sort: "group-position" %}
+  {% if group_docs != empty %}
+    <h3>{{ group }}</h3>
+    {% for doc in group_docs %}
+      <div>
+        <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.short-title }}</a>
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endfor %}

@@ -1,5 +1,5 @@
 #!/bin/bash
 # Fetch the README.md file from the Vue.js example app
 
-curl 'https://raw.githubusercontent.com/airbrake/airbrake-js/master/examples/vuejs/README.md' \
+curl 'https://raw.githubusercontent.com/airbrake/airbrake-js/master/packages/browser/examples/vuejs/README.md' \
 -o config.md

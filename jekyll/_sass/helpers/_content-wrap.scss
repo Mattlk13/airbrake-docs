@@ -1,0 +1,8 @@
+.content-wrap {
+  background: $ab-white;
+  min-height: 75vh;
+
+  @include media-breakpoint-up("md") {
+    box-shadow: inset 1px 0px 0px $ab-grey-800;
+  }
+}

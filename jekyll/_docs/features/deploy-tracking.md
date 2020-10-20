@@ -50,13 +50,13 @@ filter by a specific deploy in the search dropdown.
 
 ## Deploy tracking with the API
 
-You can track a deploy with the POST to the /v4/deploys api
-endpoint [docs](https://airbrake.io/docs/api/#create-deploy-v4).
+You can track a deploy with a POST to the /v4/deploys
+[API endpoint](https://airbrake.io/docs/api/#create-deploy-v4).
 
 You want to trigger a POST each time you deploy, specifying at least your
-`PROJECT_ID`, `PROJECT_KEY` and `environment` in the JSON data. If you provide the
-other keys this will enable us to build links in backtraces that link to your
-repository.
+`PROJECT_ID`, `PROJECT_KEY` and `environment` in the JSON data. If you also
+provide a `repository` and `revision`, this will enable us to build links in
+backtraces that link to your repository.
 
 ### Example curl command
 {% highlight bash %}

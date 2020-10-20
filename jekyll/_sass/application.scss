@@ -1,18 +1,39 @@
-// Just scss functional code, variables, mixins, functions, etc
-@import "utils/variables";
-@import "utils/airbrake-colors";
-@import "utils/placeholders";
-@import "utils/airbrake-mixins";
+// Configuration and helpers
+@import
+  "abstracts/airbrake-colors",
+  "abstracts/mixins",
+  "abstracts/variables";
 
-// Scaffolding, resets, basic styles for tags and typography
-@import "base/base";
-@import "base/buttons";
-@import "base/footer";
-@import "base/header";
-@import "base/sidebar";
-@import "base/content";
+// Vendors
+@import
+  "vendor/bootstrap/stylesheets/bootstrap";
 
-// Context-independent modules, should work anywhere
-@import "modules/content-separator";
-@import "modules/image-list";
-@import "modules/list-distributed";
+// Base
+@import
+  "base/base",
+  "base/buttons",
+  "base/content",
+  "base/footer",
+  "base/header",
+  "base/sidebar";
+
+// Bootstrap overrides
+@import
+  "bootstrap-overrides/alerts",
+  "bootstrap-overrides/badge",
+  "bootstrap-overrides/btn-group",
+  "bootstrap-overrides/card-header",
+  "bootstrap-overrides/dropdown",
+  "bootstrap-overrides/pagination",
+  "bootstrap-overrides/text-monospace",
+  "bootstrap-overrides/tooltip";
+
+// Helpers
+@import
+  "helpers/bkg-grey",
+  "helpers/content-wrap",
+  "helpers/highlight";
+
+// Modules
+@import
+  "modules/home-categories";

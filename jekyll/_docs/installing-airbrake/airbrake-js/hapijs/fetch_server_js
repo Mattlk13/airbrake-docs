@@ -1,5 +1,0 @@
-#!/bin/bash
-# fetch the server.js file from the example hapi.js app
-
-curl 'https://raw.githubusercontent.com/airbrake/airbrake-js/master/examples/hapi/server.js' \
--o server.js

@@ -1,63 +1,240 @@
-@mixin btnColors($background, $color: $ab-white) {
+@mixin btnColors($background, $color: $ab-white, $hoverOverride: true) {
   color: $color;
   background: $background;
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: $color;
-  }
+  @if $hoverOverride {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color;
+      background: lighten($background, 5);
+    }
 
-  &:hover {
-    background: lighten($background, 5);
-  }
-
-  &:active {
-    color: $color;
-    background: darken($background, 1);
+    &:active {
+      color: $color;
+      background: darken($background, 1);
+    }
   }
 }
+
+$btn-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, 0.2);
+$btn-box-shadow-active: 0 1px 1px rgba(0, 0, 0, 0.2);
 
 // Inherits styles from Bootstrap's .btn
 .btn {
-  padding: 0.8em 1em;
-  font-size: $fontDefault;
+  // padding of 6px 12px with a font-size of 14,
+  // transformed to em so we can change the font-size
+  // and the padding will change accordingly
+  padding: 0.4285714286em 0.8571428571em;
   text-decoration: none;
-  box-shadow: 0 3px 0 rgba($ab-black, 0.1);
+  border-radius: 2px;
+  box-shadow: $btn-box-shadow;
+  white-space: normal;
+
+  @include btnColors($ab-white, $ab-grey-400);
+
+  &:focus,
+  &:focus:active {
+    outline: 0;
+  }
+
+  &:hover {
+    // Use a specific background for the default background color ($ab-white) the
+    // rest of the modifiers will use the background defined by the .btnColors mixin
+    background: $ab-blue-900;
+  }
 
   &:active {
     position: relative;
-    top: 3px;
+    top: 1px;
+    box-shadow: $btn-box-shadow-active;
+    background: $ab-blue-800;
+  }
+
+  &.disabled,
+  &[disabled] {
+    top: 0;
+    opacity: 0.5;
+    box-shadow: $btn-box-shadow-active;
+
+    &:hover {
+      background: $ab-white;
+    }
   }
 }
 
+// Color modifiers
 .btn--primary {
-  @include btnColors($ab-orange-500);
+  @include btnColors($ab-orange-400);
 }
 
 .btn--secondary {
   @include btnColors($ab-blue-400);
 }
 
-.btn--error {
-  @include btnColors($ab-red-600);
-}
-
 .btn--success {
   @include btnColors($ab-green-400);
 }
 
+.btn--danger {
+  @include btnColors($ab-red-300);
+}
+
+.btn--danger-inverted {
+  @include btnColors($ab-white, $ab-red-300);
+}
+
+.btn--neutral {
+  @include btnColors($ab-grey-100);
+}
+
+.btn--neutral-light {
+  @include btnColors($ab-grey-600);
+}
+
+.btn--link-color {
+  border: 0;
+  $color: $ab-blue-400;
+  @include btnColors(transparent, $color, false);
+}
+
+.btn--link {
+  padding: 0;
+  border: 0;
+  $color: $ab-blue-400;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  vertical-align: baseline;
+  @include btnColors(transparent, $color);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn--link-light {
+  $color: $ab-grey-1000;
+  @include btnColors(transparent, $color);
+
+  &:hover {
+    color: lighten($color, 5);
+  }
+
+  &:active {
+    color: darken($color, 1);
+  }
+}
+
+.btn--upgrade {
+  @include btnColors($ab-white, $ab-grey-400);
+
+  padding-left: 6px;
+
+  &:before {
+    content: "★ ";
+    color: $ab-orange-600;
+    font-size: 1.3em;
+    line-height: 1;
+    vertical-align: text-top;
+  }
+
+  &:hover {
+    background: $ab-blue-900;
+  }
+}
+
+// Size modifiers
+.btn--xsmall {
+  font-size: $ab-font-size-x-small;
+}
+
+.btn--small {
+  font-size: $ab-font-size-small;
+}
+
+.btn--default {
+  font-size: $ab-font-size-default;
+}
+
+.btn--large {
+  font-size: $ab-font-size-large;
+}
+
+.btn--sm-large {
+  @include media-breakpoint-up("md") {
+    font-size: $ab-font-size-large;
+  }
+}
+
+.btn--xlarge {
+  font-size: $ab-font-size-x-large;
+}
+
+.btn--xxlarge {
+  font-size: $ab-font-size-xx-large;
+}
+
+// Style modifiers
 .btn--line {
-  @include btnColors($ab-green-400, $ab-grey-400);
+  @include btnColors($ab-grey-900, $ab-grey-400);
   border: 1px solid currentColor;
   background: transparent;
   box-shadow: none;
 }
 
-.btn--xlarge {
-  font-size: $fontXLarge;
+.btn--no-shadow {
+  &,
+  &:active {
+    box-shadow: none;
+  }
 }
 
-.btn--xxlarge {
-  font-size: $fontXXLarge;
+.btn--no-padding {
+  padding: 0;
+}
+
+.btn--xs-block {
+  display: block;
+  width: 100%;
+
+  @include media-breakpoint-up("md") {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.btn--input-group {
+  border-radius: 0 2px 2px 0;
+
+  &:active {
+    top: 0;
+  }
+}
+
+.btn__img {
+  height: 1.5em;
+  vertical-align: bottom;
+}
+
+.btn--pricing {
+  margin: 0 auto;
+  @include media-breakpoint-up("md") {
+    max-width: 60%;
+  }
+}
+
+.btn--valign-top {
+  vertical-align: top;
+}
+
+.btn--reduced-padding {
+  padding: 1px 6px;
+}
+
+// Bootstrap classes
+.btn-group {
+  .btn + .btn {
+    margin-left: 0;
+  }
 }

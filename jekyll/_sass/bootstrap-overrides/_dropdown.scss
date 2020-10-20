@@ -1,0 +1,16 @@
+.dropdown-item:not([href]) {
+  &.active,
+  &:active {
+    color: $ab-white;
+  }
+}
+
+.dropdown-menu--reduced-padding {
+  .dropdown-item {
+    padding: 3px 10px;
+  }
+}
+
+.dropdown-item--link {
+  color: $ab-blue-400;
+}

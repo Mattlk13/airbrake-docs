@@ -1,17 +1,13 @@
 ---
 layout: classic-docs
 title: Performance Monitoring for Go applications
-short-title: Performance Monitoring for Go
+short-title: Monitoring Go apps
 categories: [performance-monitoring]
+group: Go Performance Monitoring
 description: Performance Monitoring for Go applications
 ---
 
-Application Performance Monitoring with Airbrake makes it easy to:
-- See a broad performance overview for your whole application
-- Measure user satisfaction with your app performance using Apdex
-- Identify routes with problematic performance
-- Zoom into specific endpoints to see time spent in the DB, view, cache,
-  external requests, and more
+{% include_relative partials/features-list.md %}
 
 ## Go Support
 
@@ -106,15 +102,7 @@ Once you run this example and perform some `curl`s or visit
 [localhost:5555/](http://localhost:5555/) in your browser, you will see
 performance requests in your project's performance dashboard.
 
-## Congratulations!
-
-Great job! If you've used this example in your app, you can visit your
-Airbrake project's Performance Dashboard to see your performance data! Soon
-enough you'll have more insights into your application's performance. In the
-meantime why not check out the [Performance Dashboard
-features](/docs/performance-monitoring/performance-dashboard-features/).
-If you have questions about Performance Monitoring, visit the [Performance
-Monitoring FAQ](/docs/performance-monitoring/frequently-asked-questions/).
+{% include_relative partials/congratulations.md %}
 
 ### Measuring timing of specific operations
 

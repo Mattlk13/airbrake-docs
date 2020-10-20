@@ -1,6 +1,6 @@
 ## Features
 
-- Easy and flexible installation options including NPM, Bower and a [public CDN](https://cdnjs.com/libraries/airbrake-js)
+- Easy and flexible installation options including npm and Yarn
 - Send uncaught errors to Airbrake or manually using a try/catch
 - [Add custom parameters](https://github.com/airbrake/airbrake-js/tree/master/packages/browser#filtering-errors) to your errors for more context
 - [Private sourcemap support](/docs/features/private-sourcemaps)

@@ -1,6 +1,7 @@
 _site/
 _staging_site/
 .sass-cache/
+.jekyll-cache
 .jekyll-metadata
 .vagrant/
 .DS_Store

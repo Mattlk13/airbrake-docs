@@ -6,7 +6,7 @@ description: Airbrake Security and Compliance
 ---
 
 ### Is data encrypted in transit?
-Communication between customers and Airbrake is by default sent securely
+Yes. Communication between customers and Airbrake is by default sent securely
 via TLS.
 
 Airbrake currently supports TLS protocol v1.2.

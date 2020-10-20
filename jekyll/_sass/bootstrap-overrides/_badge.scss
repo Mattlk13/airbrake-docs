@@ -1,0 +1,32 @@
+.badge {
+  display: inline;
+  line-height: 1.7; // for vertical centering on Android (Roboto font)
+  color: $ab-white;
+  cursor: default;
+}
+
+.badge--default {
+  background-color: $ab-grey-500;
+}
+
+.badge--small {
+  font-size: $ab-font-size-x-small;
+  vertical-align: middle;
+
+  .glyphicon {
+    vertical-align: baseline;
+  }
+}
+
+.badge--icon {
+  background-color: $ab-blue-600;
+  cursor: pointer;
+
+  .glyphicon {
+    display: inline;
+    position: relative;
+    top: 2px;
+    font-size: $ab-font-size-default;
+    line-height: $ab-font-size-small;
+  }
+}

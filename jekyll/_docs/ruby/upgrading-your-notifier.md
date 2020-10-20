@@ -1,7 +1,10 @@
 ---
 layout: classic-docs
 title: Upgrading your notifier
-categories: [ruby]
+short-title: Updating your Rails notifier
+categories: [ruby, performance-monitoring]
+group: Rails Performance Monitoring
+group-position: 2
 description: Upgrading your notifier
 ---
 > **Note:** If you are upgrading from version `4.X.X` or older, please
@@ -12,7 +15,7 @@ follow our [guide to upgrade from a deprecated version](/docs/ruby/upgrading-fro
 just edit your `Gemfile`:
 
 ```rb
-gem 'airbrake', '~> 9.5'
+gem 'airbrake'
 ```
 
 **Step: 2:** Run the update command to update the `airbrake` gem and `airbrake-ruby` gem
@@ -24,12 +27,12 @@ bundle update airbrake airbrake-ruby
 
 That's it! Your upgrade is complete.
 
-> **Note:** by default, current versions of our gem **monitor performance** along
-with errors. If you want to disable performance monitoring, set the
-[`performance_stats`
-option](https://github.com/airbrake/airbrake-ruby#performance_stats) to
-`false`.
-
 #### Problems upgrading?
 If you run into any issues upgrading, we are happy to help. Just let us
 know what happened at [support@airbrake.io](mailto:support@airbrake.io).
+
+#### Going further
+Check out our
+[main gem's GitHub](https://github.com/airbrake/airbrake)
+for more info or our base, Ruby gem for
+[advanced configuration options](https://github.com/airbrake/airbrake-ruby).

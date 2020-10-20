@@ -1,5 +1,0 @@
-#!/bin/bash
-# This fetches the configuration from the airbrake-js example app on github
-
-curl "https://raw.githubusercontent.com/airbrake/airbrake-js/master/examples/angular-2/README.md" \
- -o config.md

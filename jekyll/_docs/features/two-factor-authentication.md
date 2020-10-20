@@ -42,3 +42,15 @@ With the setup done, on the next login, you will be asked to input the
 two-factor authentication code from your 2FA app.
 
 ![2fa-login](/docs/assets/img/docs/features/2fa_login.png)
+
+
+### Require two-factor authentication
+
+On your [Airbrake account security page](https://airbrake.io/account/security),
+you can enable the **Require all users to have two-factor authentication enabled**
+setting which forces all users on your Airbrake account to enable two-factor
+authentication. Users won't have access to any Airbrake page until they enable
+it. Additionally, if an admin user on your account disables that setting, all
+other admin users will be notified about disabled setting via email.
+
+![require-2fa-setting](/docs/assets/img/docs/features/require-2fa-setting.png)

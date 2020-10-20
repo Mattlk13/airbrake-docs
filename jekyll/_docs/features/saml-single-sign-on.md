@@ -1,15 +1,13 @@
 ---
 layout: classic-docs
-title: SAML single sign-on (beta)
-short-title: SAML single sign-on (beta)
+title: SAML single sign-on
+short-title: SAML single sign-on
 categories: [features]
 description: SAML single sign-on
 ---
 
 SAML single sign-on allows your team to log in via [Okta](https://www.okta.com)
-or [OneLogin](https://www.onelogin.com). This feature is currently in beta.
-Please contact [support@airbrake.io](mailto:support@airbrake.io) if you want to
-be a beta tester.
+or [OneLogin](https://www.onelogin.com).
 
 Below you can find the configuration documentation for Okta and OneLogin.
 

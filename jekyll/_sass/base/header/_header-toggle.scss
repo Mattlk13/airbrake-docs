@@ -7,7 +7,7 @@
   background-color: rgba($ab-black, 0.2);
   border-radius: 4px;
 
-  @media ($greaterThanSmall) {
+  @include media-breakpoint-up("md") {
     display: none;
   }
 }

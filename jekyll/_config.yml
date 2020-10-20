@@ -23,7 +23,4 @@ twitter_username: airbrake
 github_username:  airbrake
 
 plugins:
-  - jekyll-bootstrap-sass
-
-bootstrap:
-  assets: true
+  - jekyll-target-blank
